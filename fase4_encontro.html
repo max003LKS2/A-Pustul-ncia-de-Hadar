@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A Pustulância de Hadar — Fase 4C (Encontro do Zelador)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <h1>Fase 4C — O Zelador do Vitral</h1>
+        <div class="subtitle">Quando vocês forçam, o lugar responde com um corpo • e o corpo vem cobrar</div>
+        <div class="pill">Arena: <span class="kbd">terreno</span> • Caos: <span class="kbd">d6</span> • Choque: <span class="kbd">D12</span> • Testes: <span class="kbd">D20</span></div>
+      </div>
+      <div class="top-actions">
+        <button class="btn small" onclick="goTo('fase4.html')">← Voltar ao HUB</button>
+        <button class="btn small" onclick="doTreasure('treasureBox4c')">🎲 Sorteio de Tesouro</button>
+        <button class="btn small alt" onclick="goTo('fase5.html')">Ir para Fase 5 →</button>
+      </div>
+    </div>
+
+    <div id="treasureBox4c" class="grid"></div>
+
+    <div class="grid two">
+      <div class="card">
+        <h2 class="section-title">Cena — A Queda das Estrelas</h2>
+
+        <div class="readaloud">
+          <span class="dropcap">Q</span>
+          uando vocês forçam a passagem, a Nave muda de humor.
+          Não “fica com raiva”.
+          Fica… <em>clínica</em>.
+          Como algo que decide cortar a carne para ver onde dói.
+          <br><br>
+          O vitral do teto muda de cor.
+          As estrelas deixam de pingar e começam a… <em>cair</em>.
+          Primeiro é só um estalo.
+          Depois outro.
+          Como unha em vidro.
+          <br><br>
+          A luz púrpura se concentra num ponto e o ponto desaba, vomitando vidro, sombra e gosma.
+          A massa aterrissa em quatro membros — como estátua quebrada que aprendeu a caçar.
+          <br><br>
+          Ele se levanta com som de vidro molhado.
+          Quando “olha”, não há olhos.
+          Há reflexos onde olhos deveriam existir.
+          Reflexos que procuram… <em>um nome</em>.
+          <br><br>
+          E vocês entendem a função dele:
+          ele não guarda a porta.
+          Ele guarda o <em>custo</em>.
+          Ele é o jeito que a Nave diz:
+          “Se querem passar, me mostrem quem vocês são quando dói.”
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Câmera antes da iniciativa (puxe fala):</strong><br/>
+          <em>Jogador 1, o que você protege agora: um aliado, o altar, ou a rota de fuga?</em><br/>
+          <em>Jogador 2, qual detalhe do monstro te lembra o festival?</em><br/>
+          <em>Jogador 3, você quer vencer rápido… ou entender o que ele “guarda”?</em><br/>
+          <em>Jogador 4, você ataca primeiro ou mede o terreno?</em><br/>
+          <em>Jogador 5, você olha pro vitral ou pro chão? Por quê?</em><br/>
+          <em>Jogador 6, o que você grita (ou não grita) quando ele se move?</em>
+        </div>
+
+        <hr class="sep"/>
+
+        <h2 class="section-title">Caos de Combate (d6)</h2>
+        <div class="details">
+          <div class="top-actions">
+            <button class="btn small" onclick="rollFightChaos()">🎲 Rolar Caos (d6)</button>
+          </div>
+          <div id="fightChaosOut" class="note" style="margin-top:12px">
+            Use 1 vez no começo e mais 1 vez quando o Zelador cair abaixo de metade dos PV.
+            Se o grupo travar, role de novo: a arena “decide por vocês”.
+          </div>
+        </div>
+
+        <hr class="sep"/>
+
+        <h2 class="section-title">Arena — Terreno com escolhas</h2>
+        <div class="details">
+          <ul>
+            <li><strong>Estilhaços no chão:</strong> quem correr faz <strong>Destreza (D20, D12)</strong>. 1–4: escorrega e perde posição; 5–9: passa raspando; 10–20: atravessa bem.</li>
+            <li><strong>Costelas-pilares:</strong> cobertura, mas vibram. Quem encostar quando elas tremem rola <strong>Sabedoria (D12)</strong>. 1–3: abalo; 4–12: mantém foco.</li>
+            <li><strong>Goteira violeta:</strong> quem terminar turno nela rola <strong>Constituição (D12)</strong>. 1–3: 1d6 necrótico opcional; 4–6: enjoo; 7–12: resiste.</li>
+            <li><strong>Vitral no teto:</strong> quando alguém fala “nome” alto, o vitral “responde” (só narrativa… até você querer que não seja).</li>
+          </ul>
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Anti-travamento do combate:</strong><br/>
+          Se a luta virar “bater até acabar”, faça o Zelador mudar objetivo:
+          ele tenta <em>isolar</em> alguém (empurrar para estilhaços / goteira / canto sem linha de cura).
+          Pergunte: <em>“Quem corre para não deixar sozinho?”</em>
+        </div>
+
+        <div class="statblock" style="margin-top:12px">
+          <div class="name">
+            <h3>Zelador do Vitral</h3>
+            <div class="meta">Médio construto/aberração, neutro maligno • ND 1 (sugestão)</div>
+          </div>
+          <div class="line"></div>
+
+          <div class="row">
+            <div class="kv">
+              <strong>CA</strong> 13 (vidro e lodo)<br/>
+              <strong>PV</strong> 22 (4d8 + 4)<br/>
+              <strong>Desloc.</strong> 9m
+            </div>
+            <div class="kv">
+              <strong>FOR</strong> 14 (+2) • <strong>DES</strong> 12 (+1) • <strong>CON</strong> 12 (+1)<br/>
+              <strong>INT</strong> 5 (-3) • <strong>SAB</strong> 10 (+0) • <strong>CAR</strong> 6 (-2)
+            </div>
+          </div>
+
+          <div class="row" style="margin-top:10px">
+            <div class="kv">
+              <strong>Resist.</strong> cortante (de não-mágico) opcional<br/>
+              <strong>Sentidos</strong> visão no escuro 18m, Percepção passiva 10
+            </div>
+            <div class="kv">
+              <strong>Traço: Estilhaços.</strong> Quando sofre 8+ dano em um turno, estilhaça.
+              Quem estiver adjacente rola <strong>Destreza (D12)</strong>:<br/>
+              1–3: 1d6 cortante • 4–6: 2 cortante • 7–9: evita metade (narrativo) • 10–12: evita.
+            </div>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="actions">
+            <h4>Ações</h4>
+            <p><strong>Golpe de Vidro.</strong> +4 para acertar, alcance 1,5m, 1 alvo. Dano 7 (1d8 + 2) cortante.</p>
+            <p><strong>Jato Violeta (Recarga 5–6).</strong> Cone 4,5m.
+              O alvo rola <strong>Constituição (D12)</strong>:<br/>
+              1–3: sofre 2d6 necrótico e fica nauseado (narrativo) • 4–6: sofre 2d6 (metade se quiser) • 7–12: sofre metade e resiste ao enjoo.
+            </p>
+            <p><strong>Impulso do Zelador (1 vez, quando cair abaixo de metade dos PV):</strong>
+              ele “se recompõe” puxando vidro do chão. Todos em 3m rolam <strong>DES (D12)</strong> (mesmo espectro do traço).
+            </p>
+          </div>
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Vitória:</strong> o Zelador deixa cair um <em>fragmento dourado de vitral</em> (chave simbólica).
+          Quando alguém pega, o vidro “pesa” como memória.
+          <br/><span class="muted">Se alguém já tem Marca Dourada do Puzzle, descreva o dourado “conversando” com o fragmento.</span>
+        </div>
+
+        <hr class="sep"/>
+
+        <h2 class="section-title">Convergência — A Passagem</h2>
+        <div class="readaloud">
+          <span class="dropcap">C</span>
+          om o Zelador vencido, a Nave perde um pouco da pose.
+          O vitral inteiro brilha num dourado fraco — brasa quase apagando.
+          Uma porta antes invisível se desenha no ar.
+          <br><br>
+          E vocês entendem:
+          não era um guardião “de sala”.
+          Era a Nave provando um conceito em vocês:
+          <em>“passar custa.”</em>
+          <br><br>
+          Se vocês passam, passam carregando algo.
+          Mesmo que seja só a certeza de que o lugar aprendeu o jeito que vocês respiram quando a luta termina.
+        </div>
+
+        <div class="top-actions" style="margin-top:14px">
+          <button class="btn small" onclick="doTreasure('treasureBox4c')">🎲 Tesouro (após vitória)</button>
+          <button class="btn small alt" onclick="goTo('fase4.html')">↩ Voltar ao HUB</button>
+          <button class="btn alt" onclick="goTo('fase5.html')">Entrar → Fase 5</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title">Painel do Mestre — Encontro</h2>
+        <div class="details">
+          <h3>Escalonamento rápido</h3>
+          <ul>
+            <li>Grupo fraco: reduza PV para 16.</li>
+            <li>Grupo forte: adicione 1–2 Crias de Hadar como “ecos” na rodada 2.</li>
+            <li>Horror: quando alguém tirar 1, descreva o vitral respondendo com “chuva de estrela” (sem dano obrigatório).</li>
+          </ul>
+        </div>
+
+        <div class="details" style="margin-top:12px">
+          <h3>Anti-travamento pronto</h3>
+          <p class="readaloud">
+            O Zelador para por meio segundo.
+            Inclina a cabeça.
+            E tenta dizer o nome de alguém… errado por uma letra.
+            Como criança aprendendo a chamar o que vai morder.
+          </p>
+          <p><strong>Pergunte:</strong> “Quem responde? Com ataque, com silêncio ou com provocação?”</p>
+        </div>
+
+        <div class="footer">Essa rota dá combate + chave e te joga direto na Fase 5 com sangue no ar.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function d(n){ return Math.floor(Math.random()*n)+1; }
+    function rollFightChaos(){
+      const r = d(6);
+      const out = document.getElementById('fightChaosOut');
+      const map = {
+        1: "Estilhaços por toda parte. Quem se mover mais de 6m no turno rola <strong>Destreza (D12)</strong> — 1–3: 1d6 cortante opcional; 4–12: passa.",
+        2: "A luz apaga por 2 segundos. Na rodada seguinte, a primeira ação de cada personagem acontece “no escuro” (posicionamento + nervo).",
+        3: "O chão pulsa e tenta separar o grupo: escolha uma dupla e descreva como o espaço entre eles parece maior do que deveria ser.",
+        4: "Silêncio total por 1 rodada. Magia verbal soa abafada. Peça a alguém para descrever como conjura mesmo assim.",
+        5: "Um brilho dourado atravessa o vitral. Um aliado ignora abalo/medo narrativo por 1 turno (foco limpo).",
+        6: "Presságio curto: o vitral mostra o ‘coração’ piscando uma vez. Pergunte: <em>“quem reconhece esse pulso?”</em>"
+      };
+      out.innerHTML = `<p><span class="tag">Caos (d6): ${r}</span></p><div class="readaloud">${map[r]}</div>`;
+    }
+  </script>
+</body>
+</html>

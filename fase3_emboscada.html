@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fase 3 — Emboscada</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <h1>Fase 3 — Emboscada</h1>
+        <div class="subtitle">O lugar tenta separar vocês porque separado é mais fácil de consumir</div>
+        <div class="pill">Arena • Terreno vivo • Use Crias (Fase 2)</div>
+      </div>
+      <div class="top-actions">
+        <button class="btn small" onclick="goTo('fase3.html')">← HUB</button>
+        <button class="btn small" onclick="doTreasure('treasureBoxE')">🎲 Tesouro</button>
+        <button class="btn small alt" onclick="goTo('fase3_ponte.html')">Ir para Ponte →</button>
+      </div>
+    </div>
+
+    <div id="treasureBoxE" class="grid"></div>
+
+    <div class="grid two">
+      <div class="card">
+        <h2 class="section-title">Leitura em Voz Alta</h2>
+        <div class="readaloud">
+          <span class="dropcap">V</span>
+          ocês entram numa nave menor — miniatura de catedral.
+          O teto é mais baixo, o ar mais pesado, como se o lugar tivesse decidido manter tudo perto do peito.
+          Colunas-costela formam corredores estreitos.
+          Vitrais quebrados deixam cair luz púrpura em placas no chão, como se alguém tivesse cortado o ar em quadrados.
+          <br><br>
+          O silêncio aqui não é silêncio.
+          É respiração presa.
+          Um suspiro que nunca termina.
+          <br><br>
+          E então o lugar faz o que lugares famintos fazem:
+          tenta separar vocês.
+          <br><br>
+          Uma coluna muda de lugar com um estalo úmido.
+          Um pedaço de piso cede como língua.
+          Uma lanterna apaga sem vento.
+          <br><br>
+          Do escuro, surgem as Crias — não como chegada, como consequência.
+          Elas escorregam pelos cantos, pequenas e rápidas,
+          e a coisa mais nojenta nelas não é o corpo:
+          é a intenção.
+          Uma delas estende a mão para o rosto de alguém.
+          Não para matar.
+          Para colher.
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Spotlight antes da iniciativa (faça 3 falarem):</strong><br/>
+          • Qual aliado você não deixa ficar isolado?<br/>
+          • Você tenta vencer rápido ou quer entender o padrão?<br/>
+          • Qual detalhe do terreno você usa como vantagem?<br/>
+          • Sua arma/magia parece “errada” sob luz púrpura? Como?
+        </div>
+
+        <hr class="sep"/>
+
+        <h2 class="section-title">Terreno vivo (use para mover a luta)</h2>
+        <div class="details">
+          <ul>
+            <li><strong>Placas de luz púrpura:</strong> quem parar nelas por 1 turno sente frio dentro do osso (SAB D12 opcional).</li>
+            <li><strong>Vitrais no chão:</strong> correr = DES (D20, D12) ou escorrega e perde posição.</li>
+            <li><strong>Colunas-costela:</strong> meia cobertura. Se levar dano forte perto, vibra e “canta” (sino sem sino).</li>
+            <li><strong>Frestas:</strong> se cair, o piso tenta agarrar (Atletismo D20, D13 para se soltar).</li>
+          </ul>
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Anti-travamento do combate:</strong><br/>
+          Se o grupo travar taticamente, o lugar separa:
+          escolha 1 coluna e “mova” ela 1 metro, criando linha de visão ruim.
+          Depois faça 1 Cria usar <em>Toque Coletor</em> e mudar de alvo como se tivesse aprendido um medo.
+        </div>
+
+        <div class="details" style="margin-top:12px">
+          <h3>Escalada (para deixar maior)</h3>
+          <ul>
+            <li><strong>Rodada 2:</strong> o chão “respira” (DES D20, D12 para não perder movimento).</li>
+            <li><strong>Rodada 3:</strong> uma Cria maior aparece (PV dobrado) OU duas pequenas surgem atrás.</li>
+            <li><strong>Rodada 4:</strong> o lugar imita um comando (voz de Calíria, mas errada) para confundir 1 jogador.</li>
+          </ul>
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Marca (d100) — quando alguém for tocado pela Cria:</strong><br/>
+          01–10 mancha roxa • 11–30 pesadelos • 31–60 nada agora • 61–85 porta gótica no canto do olho • 86–99 “NOME” na garganta • 100 sombra atrasa 1 segundo.
+        </div>
+
+        <div class="top-actions" style="margin-top:14px">
+          <button class="btn danger" onclick="goTo('fase3_ponte.html')">Encerrar → Ponte Final</button>
+          <button class="btn small alt" onclick="goTo('fase3.html')">↩ HUB</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title">Painel do Mestre — Emboscada</h2>
+
+        <div class="details">
+          <h3>Como fazer o combate conversar com o enigma</h3>
+          <ul>
+            <li>Faça as Crias reagirem quando alguém diz “nome”.</li>
+            <li>Faça o terreno punir isolamento (separado = alvo).</li>
+            <li>Faça o lugar repetir UMA palavra importante do grupo em voz baixa.</li>
+          </ul>
+        </div>
+
+        <div class="details" style="margin-top:12px">
+          <h3>Anti-travamento pronto</h3>
+          <p class="readaloud">
+            “Uma Cria para. Inclina a cabeça.
+            E tenta dizer seu nome… errado por uma letra.”
+          </p>
+          <p><strong>Depois:</strong> “O que você faz?”</p>
+        </div>
+
+        <div class="footer">A Ponte fecha o ato. O centro chama.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

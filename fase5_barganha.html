@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A Pustulância de Hadar — Fase 5B (Conter e Selar)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <h1>Fase 5B — Conter e Selar</h1>
+        <div class="subtitle">Costurar a ferida do mundo • sem fingir que ela não dói</div>
+        <div class="pill">Ritual: <span class="kbd">3 batidas</span> • Pistas: <span class="kbd">5 letras</span> • Testes: <span class="kbd">D20</span> • Choque: <span class="kbd">D12</span></div>
+      </div>
+      <div class="top-actions">
+        <button class="btn small" onclick="goTo('fase5.html')">← Voltar ao HUB</button>
+        <button class="btn small" onclick="doTreasure('treasureBox5b')">🎲 Sorteio de Tesouro</button>
+        <button class="btn small alt" onclick="goTo('fase5_enigma.html')">Ir para o Enigma →</button>
+      </div>
+    </div>
+
+    <div id="treasureBox5b" class="grid"></div>
+
+    <div class="grid two">
+      <div class="card">
+        <div id="hub" data-scene>
+          <h2 class="section-title">Ato — “Uma gaiola para a fome.”</h2>
+          <div class="readaloud">
+            <span class="dropcap">V</span>
+            ocês não tentam matar a fome.
+            Tentam colocá-la numa gaiola.
+            <br><br>
+            O fragmento dourado (ou a marca dourada, ou a coragem que sobrou)
+            responde com um calor curto, como brasa que não quer apagar.
+            As inscrições góticas do teto vibram como coro que aprendeu uma única nota:
+            <em>costurar</em>.
+            <br><br>
+            O coração pulsa mais rápido… como se estivesse com medo de ser esquecido.
+            E vocês entendem uma verdade horrível: selar não é vitória.
+            Selar é adiar a mordida — e aceitar que o mundo vai cicatrizar torto.
+            <br><br>
+            A voz sem boca murmura:
+            <em>“VOCÊS SÃO OS QUE ADIAM. EU SOU O QUE ESPERA.”</em>
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Empurrões (fala obrigatória — sem pular):</strong><br/>
+            <em>Quem lidera o rito?</em> • <em>Quem sustenta?</em> • <em>Quem corrige?</em><br/>
+            E a pergunta cruel: <em>Que parte de vocês vai ficar do lado de cá da costura?</em>
+          </div>
+
+          <hr class="sep"/>
+
+          <h2 class="section-title">Pista 1 (anote!)</h2>
+          <div class="note">
+            O dourado aquece e grava uma letra na pele por um segundo — como cicatriz que some:
+            <br/><br/>
+            <strong>LETRA 1: N</strong><br/><br/>
+            <span class="muted">Parábola:</span> “Nome é nó. Sem nó, o mundo escorre.”
+          </div>
+          <div class="top-actions">
+            <button class="btn small" onclick="markP5Clue('N')">Registrar pista “N”</button>
+            <button class="btn alt" onclick="showOnly('batida1')">Começar o ritual →</button>
+          </div>
+        </div>
+
+        <div id="batida1" data-scene style="display:none">
+          <h2 class="section-title">Batida 1 — Traçar o Selo</h2>
+          <div class="readaloud">
+            <span class="dropcap">A</span>
+            primeira linha do selo parece simples… até vocês tentarem desenhá-la.
+            A luz dourada não quer obedecer.
+            Ela treme, como se tivesse nojo do roxo.
+            <br><br>
+            Quando alguém erra o traço, o coração “respira” — e a respiração tem gosto de ferrugem.
+            O erro aqui não é só erro: é convite.
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Anti-travamento:</strong><br/>
+            Se ninguém souber “como desenhar”, peça um gesto simbólico:
+            <em>“Você desenha com cinza, com sangue, com saliva, com ponta de arma, ou com oração?”</em>
+            O gesto vira o traço.
+          </div>
+
+          <div class="details">
+            <h3>Ação</h3>
+            <ul>
+              <li><strong>Arcanismo (D20, D14)</strong> ou <strong>Religião (D20, D14)</strong></li>
+            </ul>
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Espectro (D20):</strong>
+            1–4 azar profundo (o coração aprende uma palavra do grupo; futuro gancho) •
+            5–9 falha com consequência (tremor / custo leve) •
+            10–14 sucesso instável (passa, mas exige frase em voz alta) •
+            15–19 sólido •
+            20 sorte inquietante (o roxo recua por 1 cena).
+          </div>
+
+          <hr class="sep"/>
+
+          <h2 class="section-title">Pista 2 (anote!)</h2>
+          <div class="note">
+            Quando a linha encaixa, o vitral inteiro “fala” sem som:
+            <br/><br/>
+            <strong>LETRA 2: O</strong><br/><br/>
+            <span class="muted">Parábola:</span> “Ouro é pele. Nome é osso.”
+          </div>
+
+          <div class="top-actions">
+            <button class="btn small" onclick="markP5Clue('O')">Registrar pista “O”</button>
+            <button class="btn alt" onclick="showOnly('batida2')">Continuar →</button>
+          </div>
+        </div>
+
+        <div id="batida2" data-scene style="display:none">
+          <h2 class="section-title">Batida 2 — Ancorar com Juramento</h2>
+          <div class="readaloud">
+            <span class="dropcap">A</span>
+            segunda parte exige algo que o lugar respeita: compromisso.
+            Quando vocês juram, o mundo reconhece.
+            Quando vocês juram, o mundo prende.
+            <br><br>
+            E por isso o coração tenta distorcer a promessa.
+            Ele quer que vocês prometam errado.
+            Um “nunca” vira “talvez”.
+            Um “ninguém” vira “alguém”.
+            Um “nós” vira “eu”.
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Fala obrigatória (duas pessoas):</strong><br/>
+            <strong>Jogador 2:</strong> diga um juramento curto (1 frase).<br/>
+            <strong>Jogador 5:</strong> diga como você garante que o juramento não virou armadilha.
+          </div>
+
+          <div class="details">
+            <h3>Ação</h3>
+            <ul>
+              <li><strong>Religião (D20, D14)</strong> ou <strong>Intuição (D20, D13)</strong> (perceber/manter a promessa “limpa”)</li>
+            </ul>
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Choque (se o coração tentar “puxar” uma palavra):</strong> <strong>SAB (D12)</strong><br/>
+            1–3: a voz falha e sai outra palavra • 4–6: tremor • 7–12 segura.
+          </div>
+
+          <hr class="sep"/>
+
+          <h2 class="section-title">Pista 3 (anote!)</h2>
+          <div class="note">
+            A promessa fecha e o chão responde com uma letra como cicatriz:
+            <br/><br/>
+            <strong>LETRA 3: M</strong><br/><br/>
+            <span class="muted">Parábola:</span> “Memória é o barro onde o nome pisa.”
+          </div>
+
+          <div class="top-actions">
+            <button class="btn small" onclick="markP5Clue('M')">Registrar pista “M”</button>
+            <button class="btn alt" onclick="showOnly('batida3')">Continuar →</button>
+          </div>
+        </div>
+
+        <div id="batida3" data-scene style="display:none">
+          <h2 class="section-title">Batida 3 — A Palavra que Fecha</h2>
+          <div class="readaloud">
+            <span class="dropcap">A</span>
+            terceira parte não é desenho e não é fé.
+            É linguagem:
+            uma palavra certa no lugar certo.
+            <br><br>
+            E vocês percebem o problema:
+            o coração não quer que vocês encontrem essa palavra,
+            porque a palavra é, no fundo, um tipo de nome.
+            <br><br>
+            As letras no teto se reorganizam como vermes de luz.
+            A cada tentativa, uma sílaba tenta cair da boca de alguém — como se o lugar quisesse “assinar” por vocês.
+          </div>
+
+          <div class="details">
+            <h3>Ação</h3>
+            <ul>
+              <li><strong>Investigação (D20, D13)</strong> para achar a palavra no vitral/inscrições</li>
+              <li><strong>Arcanismo (D20, D15)</strong> para entender o padrão</li>
+              <li><strong>Religião (D20, D14)</strong> para recitar sem “entregar” demais</li>
+            </ul>
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Anti-travamento:</strong><br/>
+            Se a mesa travar: o vitral pisca e mostra 1 letra “mais forte”.
+            Pergunte: <em>“Quem aponta a letra e quem diz a palavra?”</em>
+            (dois jogadores, duas ações).
+          </div>
+
+          <hr class="sep"/>
+
+          <h2 class="section-title">Pista 4 (anote!)</h2>
+          <div class="note">
+            Quando alguém encontra a palavra, ela não aparece inteira.
+            Aparece como uma letra isolada, insistente:
+            <br/><br/>
+            <strong>LETRA 4: E</strong><br/><br/>
+            <span class="muted">Parábola:</span> “Eu fecho o que vocês nomeiam. Eu abro o que vocês temem nomear.”
+          </div>
+
+          <div class="top-actions">
+            <button class="btn small" onclick="markP5Clue('E')">Registrar pista “E”</button>
+            <button class="btn alt" onclick="showOnly('fecho')">Finalizar →</button>
+          </div>
+        </div>
+
+        <div id="fecho" data-scene style="display:none">
+          <h2 class="section-title">Fecho — A Costura Imperfeita</h2>
+          <div class="readaloud">
+            <span class="dropcap">O</span>
+            selo fecha… mas não cura.
+            O roxo recua como mar voltando, irritado, prometendo.
+            O coração não morre.
+            Ele aprende a esperar.
+            <br><br>
+            O dourado fica opaco, como se tivesse sido gasto.
+            E a câmara inteira parece menor — não por vencerem,
+            mas por vocês terem costurado o suficiente para passar.
+            <br><br>
+            A voz sem boca sussurra com um carinho que dá nojo:
+            <em>“VOCÊS ME COSTURARAM. EU VOU APRENDER A DESFAZER.”</em>
+          </div>
+
+          <hr class="sep"/>
+
+          <h2 class="section-title">Pista 5 (anote!)</h2>
+          <div class="note">
+            No final do rito, o dourado assina a costura com uma letra:
+            <br/><br/>
+            <strong>LETRA 5: S</strong><br/><br/>
+            <span class="muted">Parábola:</span> “Se vocês querem um mundo, lembrem: mundos são feitos de nomes.”
+          </div>
+
+          <div class="top-actions">
+            <button class="btn small" onclick="markP5Clue('S')">Registrar pista “S”</button>
+            <button class="btn alt" onclick="goTo('fase5_enigma.html')">Ir ao Enigma Final →</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title">Painel do Mestre — Conter</h2>
+        <div class="details">
+          <h3>Como deixar mais dramático</h3>
+          <ul>
+            <li>Exija frases pessoais em cada batida (“eu prometo…”, “eu admito…”, “eu temo…”).</li>
+            <li>Em falha, o coração repete a frase com 1 palavra trocada (horror + contrato).</li>
+            <li>Use D12 para sustos: falta de ar, tremor, “amedrontado” narrativo.</li>
+          </ul>
+        </div>
+        <div class="details" style="margin-top:12px">
+          <h3>Anti-travamento pronto</h3>
+          <p class="readaloud">
+            As letras no teto mudam sozinhas:
+            “COSTURAR”
+            vira
+            “CONTER”
+            e então
+            “CHAMAR”.
+          </p>
+          <p><strong>Pergunte:</strong> “Quem se recusa a chamar isso de ‘vitória’?”</p>
+        </div>
+        <div class="footer">Essa rota dá as 5 letras. Depois vá para <span class="kbd">fase5_enigma.html</span>.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function getP5(){
+      try { return (typeof getRunState==='function') ? (getRunState('p5clues', {})||{}) : (JSON.parse(localStorage.getItem('p5clues')||'{}')); }
+      catch(e){ return {}; }
+    }
+    function setP5(v){
+      try { if(typeof setRunState==='function') setRunState('p5clues', v); else localStorage.setItem('p5clues', JSON.stringify(v)); }
+      catch(e){}
+    }
+    function markP5Clue(letter){
+      const obj = getP5();
+      obj[letter] = true;
+      setP5(obj);
+      alert('Pista registrada: '+letter);
+    }
+  </script>
+</body>
+</html>

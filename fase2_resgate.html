@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A Pustulância de Hadar — Fase 2A (Resgate)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <h1>Fase 2A — Resgate (Reforçado)</h1>
+        <div class="subtitle">Gente viva pesa mais que profecia • por enquanto</div>
+        <div class="pill">Teste: <span class="kbd">D20</span> • Choque: <span class="kbd">D12</span> • Caos: <span class="kbd">d6</span></div>
+      </div>
+      <div class="top-actions">
+        <button class="btn small" onclick="goTo('fase2.html')">← Voltar aos caminhos</button>
+        <button class="btn small" onclick="doTreasure('treasureBox2a')">🎲 Sorteio de Tesouro</button>
+      </div>
+    </div>
+
+    <div id="treasureBox2a" class="grid"></div>
+
+    <div class="grid two">
+      <div class="card">
+
+        <div id="hub" data-scene>
+          <h2 class="section-title">Sob os Escombros</h2>
+          <div class="readaloud">
+            <span class="dropcap">O</span>
+            som do estouro ainda mora no ar, como trovão que se recusa a ir embora.
+            O festival virou madeira quebrada, pano queimando, metal rangendo.
+            A gosma violeta escorre por frestas e juntas — não como líquido comum,
+            mas como se tivesse <em>vontade</em> e estivesse escolhendo onde ficar.
+            <br><br>
+            Há civis presos. Há fogo procurando tecido.
+            Há gente correndo sem direção.
+            E há uma coisa pior: <em>um pânico que parece inteligente</em>.
+            Como se alguém soprasse medo na multidão e dissesse “agora”.
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Calíria está com vocês.</strong><br/>
+            Ela amarra um pano no rosto, organiza duas pessoas com um gesto e diz:
+            “A gente salva primeiro. A gente entende depois.”
+            <br/><br/>
+            O sino rachado no pescoço vibra quando alguém grita “meu nome!” — como se a palavra fosse um puxão.
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Mestre — spotlight em 6:</strong><br/>
+            <em>“Jogador 1, quem você puxa primeiro?”</em><br/>
+            <em>“Jogador 2, como você abre espaço?”</em><br/>
+            <em>“Jogador 3, você cuida de ferido ou tira entulho?”</em><br/>
+            <em>“Jogador 4, você assume liderança ou age silencioso?”</em><br/>
+            <em>“Jogador 5, o que te dá nojo/medo aqui?”</em><br/>
+            <em>“Jogador 6, você percebe algo ‘errado’ no jeito que a gosma se move?”</em>
+          </div>
+
+          <div class="details" style="margin-top:12px">
+            <h3>Estrutura simples (sem travar)</h3>
+            <p>
+              Vocês enfrentam <strong>3 cenas</strong>.
+              Em cada cena, busquem <strong>2 sucessos</strong> antes de <strong>1 falha</strong>.
+              <br/>
+              A cada falha: role <span class="kbd">d6</span> de Caos e avance o risco.
+              Se ocorrerem <strong>2 falhas no total</strong>, alguém se machuca (narrativo ou 1d6).
+            </p>
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Caos (d6) — use também como anti-travamento:</strong><br/>
+            <strong>1</strong> fogo avança • <strong>2</strong> multidão derruba alguém • <strong>3</strong> fumaça (D +1 nos testes) •
+            <strong>4</strong> madeira estala (desabamento) • <strong>5</strong> um guarda ajuda (1 sucesso “grátis” narrativo) •
+            <strong>6</strong> a multidão abre caminho como se “algo” estivesse chegando.
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Espectro (qualquer teste D20 do Resgate):</strong><br/>
+            • <strong>1–4</strong>: azar profundo (Caos +1 imediato) • <strong>5–9</strong>: falha com consequência (perde tempo + piora) •<br/>
+            • <strong>10–14</strong>: sucesso instável (custo) • <strong>15–19</strong>: sucesso sólido • <strong>20</strong>: salva no último segundo e vê a gosma “procurando” rachaduras como se lembrasse caminhos.
+          </div>
+
+          <hr class="sep"/>
+
+          <h2 class="section-title">Escolha a próxima cena</h2>
+          <div class="top-actions">
+            <button class="btn alt" onclick="showOnly('cena1')">Cena 1 — Treliça e Criança</button>
+            <button class="btn" onclick="showOnly('cena2')">Cena 2 — Barraca em Chamas</button>
+            <button class="btn danger" onclick="showOnly('cena3')">Cena 3 — Carroça e Cavalo</button>
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Anti-travamento rápido:</strong><br/>
+            Se ninguém escolher, Calíria escolhe por vocês:
+            <em>“A criança primeiro.”</em> (e aponta pra Cena 1).
+          </div>
+        </div>
+
+        <!-- CENA 1 -->
+        <div id="cena1" data-scene style="display:none">
+          <h2 class="section-title">Cena 1 — Treliça e Criança</h2>
+          <div class="readaloud">
+            <span class="dropcap">U</span>
+            ma treliça caiu como mandíbula. Um casal está preso e uma criança tem o rosto sujo de cinza.
+            Os olhos dela estão grandes demais — como se não piscasse desde o estouro.
+            A multidão empurra por trás. O fogo procura pano.
+            <br><br>
+            A criança estende a mão para qualquer adulto…
+            e o gesto parece pesado, como se pedir ajuda fosse uma coisa antiga e proibida.
+          </div>
+
+          <div class="note">
+            <strong>Puxão de fala:</strong> “Quem do grupo se parece mais com ‘segurança’ pra ela?”
+            Escolha 1 jogador e pergunte: <em>“O que você diz pra criança?”</em>
+          </div>
+
+          <div class="details">
+            <h3>Testes possíveis</h3>
+            <ul>
+              <li><strong>Atletismo (D20, D14):</strong> levantar treliça / abrir corredor.</li>
+              <li><strong>Acrobacia (D20, D13):</strong> passar por baixo e puxar a criança.</li>
+              <li><strong>Medicina (D20, D12):</strong> estabilizar quem está comprimindo o peito.</li>
+              <li><strong>Persuasão (D20, D13):</strong> fazer a multidão parar de empurrar por 10 segundos.</li>
+            </ul>
+          </div>
+
+          <div class="details">
+            <h3>Se fizer… (narração pronta)</h3>
+            <ul>
+              <li><strong>Falar com a criança:</strong> “Ela tenta responder, mas a voz é só ar. Ela agarra sua manga como se fosse a única coisa sólida no mundo.”</li>
+              <li><strong>Puxar na força:</strong> “A madeira range como se tivesse dor. O calor do fogo morde sua nuca.”</li>
+              <li><strong>Organizar pessoas:</strong> “Por um instante, multidão vira equipe — e isso parece irritar o pânico inteligente.”</li>
+            </ul>
+          </div>
+
+          <div class="top-actions" style="margin-top:14px">
+            <button class="btn alt" onclick="setRunState('resgate_cena1', true); showOnly('hub')">✓ Concluir Cena 1</button>
+          </div>
+        </div>
+
+        <!-- CENA 2 -->
+        <div id="cena2" data-scene style="display:none">
+          <h2 class="section-title">Cena 2 — Barraca em Chamas</h2>
+          <div class="readaloud">
+            <span class="dropcap">A</span>
+            lona pega fogo como se tivesse sido ofendida.
+            Dentro, vocês ouvem batidas — alguém preso, tossindo.
+            A fumaça tem cheiro de açúcar queimado e ferro.
+            <br><br>
+            Por um instante, a fumaça desenha no ar um arco gótico perfeito…
+            antes de se desfazer.
+            E você tem a sensação de que o fogo tentou formar uma <em>porta</em>.
+          </div>
+
+          <div class="note">
+            <strong>Puxão de fala:</strong> “Quem entra e quem fica de fora?”
+            Escolha 2 jogadores e pergunte: <em>“Qual é o combinado de vocês?”</em>
+          </div>
+
+          <div class="details">
+            <h3>Testes possíveis</h3>
+            <ul>
+              <li><strong>Atletismo (D20, D13):</strong> arrancar lona / abrir saída.</li>
+              <li><strong>Sobrevivência (D20, D12):</strong> “ler” o fogo e escolher rota segura.</li>
+              <li><strong>Acrobacia (D20, D14):</strong> entrar e sair rápido com alguém.</li>
+              <li><strong>Intimidação (D20, D13):</strong> impor espaço (“ABRAM!”).</li>
+            </ul>
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Choque (opcional):</strong> quem entrar na fumaça rola <strong>Constituição (D12)</strong>.<br/>
+            1–3: tosse e perde tempo • 4–6: enjoo • 7–9: aguenta • 10–11: aguenta e ajuda outro • 12: vê um presságio na fumaça.
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Presságio (d100 — se alguém “ver formas”):</strong><br/>
+            01–30 nada • 31–60 “NOME” distante • 61–85 vitral dourado rachando • 86–99 sombra adiantada • 100 o fogo apaga 1 segundo como se temesse algo.
+          </div>
+
+          <div class="top-actions" style="margin-top:14px">
+            <button class="btn alt" onclick="setRunState('resgate_cena2', true); showOnly('hub')">✓ Concluir Cena 2</button>
+          </div>
+        </div>
+
+        <!-- CENA 3 -->
+        <div id="cena3" data-scene style="display:none">
+          <h2 class="section-title">Cena 3 — Carroça e Cavalo</h2>
+          <div class="readaloud">
+            <span class="dropcap">U</span>
+            m cavalo puxa o arreio como se tentasse fugir do próprio corpo. A carroça tomba.
+            Se ele disparar, atravessa gente como faca em fruta.
+            <br><br>
+            A gosma violeta escorre perto das patas —
+            e por um segundo parece <em>subir</em>, não por gravidade,
+            mas por curiosidade, como se quisesse aprender o formato de um músculo vivo.
+          </div>
+
+          <div class="note">
+            <strong>Puxão de fala:</strong> “Quem do grupo entende de medo?”
+            Escolha 1 jogador: <em>“Como você acalma um ser que não entende palavras?”</em>
+          </div>
+
+          <div class="details">
+            <h3>Testes possíveis</h3>
+            <ul>
+              <li><strong>Adestrar Animais (D20, D13):</strong> acalmar o cavalo.</li>
+              <li><strong>Atletismo (D20, D14):</strong> segurar arreio / travar movimento.</li>
+              <li><strong>Acrobacia (D20, D13):</strong> subir e cortar tiras no tempo certo.</li>
+              <li><strong>Persuasão (D20, D13):</strong> tirar civis do caminho.</li>
+            </ul>
+          </div>
+
+          <div class="details">
+            <h3>Se fizer… (narração pronta)</h3>
+            <ul>
+              <li><strong>Falar com o cavalo:</strong> “Ele treme inteiro. O branco do olho mostra medo puro. Por um segundo… ele respira junto com você.”</li>
+              <li><strong>Segurar na força:</strong> “A corda queima sua mão. Um erro aqui vira tragédia.”</li>
+              <li><strong>Cortar o arreio:</strong> “O couro estala. O cavalo dá dois passos livres — e a multidão grita como se fosse gol.”</li>
+            </ul>
+          </div>
+
+          <div class="top-actions" style="margin-top:14px">
+            <button class="btn alt" onclick="setRunState('resgate_cena3', true); showOnly('final')">✓ Concluir Cena 3</button>
+          </div>
+        </div>
+
+        <!-- FINAL -->
+        <div id="final" data-scene style="display:none">
+          <h2 class="section-title">Fecho do Resgate</h2>
+          <div class="readaloud">
+            <span class="dropcap">Q</span>
+            uando a última pessoa é puxada para fora, o mundo dá um suspiro curto.
+            Não é alívio — é só o corpo percebendo que ainda está vivo.
+            <br><br>
+            Calíria encosta a mão no ombro de um civil e diz o nome dele com firmeza.
+            Como se nome fosse coisa que mantém alguém aqui.
+            <br><br>
+            E então o sino dourado toca de novo — distante, insistente.
+            Não vem de torre.
+            Vem do ar.
+            <br><br>
+            Perto da fonte, o rasgo gótico pulsa como corte aberto.
+            E vocês entendem que, se ele ficar ali aprendendo, Brumárion vai sangrar por dentro.
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Marca de caminho:</strong> <span class="tag">Civis Salvos</span> (isso volta no Ato II como aliados/testemunhas).
+          </div>
+
+          <div class="top-actions" style="margin-top:14px">
+            <button class="btn alt" onclick="completePath('resgate',{civisSalvos:true}); goTo('fase3.html')">
+              Concluir Resgate → Ir para Fase 3
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title">Painel do Mestre — Resgate</h2>
+
+        <div class="details">
+          <h3>Anti-travamento (um comando + dois problemas)</h3>
+          <p>
+            Quando o grupo travar, Calíria corta a conversa:
+            <em>“VOCÊS! COMIGO!”</em>
+            <br/>
+            Aí você oferece dois problemas concretos: <strong>fogo</strong> e <strong>gente presa</strong>.
+          </p>
+        </div>
+
+        <div class="details" style="margin-top:12px">
+          <h3>Como dar horror sem tirar agência</h3>
+          <ul>
+            <li>Mostre a gosma “aprendendo” formas (pata, dedo, costura).</li>
+            <li>Faça o pânico parecer guiado, como se tivesse direção.</li>
+            <li>Quando alguém salvar alguém, descreva o mundo “recuando” por 1 segundo — e voltando.</li>
+          </ul>
+        </div>
+
+        <div class="footer">Depois, tudo converge na Fase 3.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

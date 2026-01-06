@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A Pustulância de Hadar — Fase 2 (Escolha de Caminhos)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <h1>Fase 2 — A Escolha de Caminhos</h1>
+        <div class="subtitle">A praça vira ruína • o céu vira ferida • e vocês precisam agir</div>
+        <div class="pill">
+          Fluxo: <span class="kbd">fase1 → fase2 → caminho → fase3</span> •
+          Caos: <span class="kbd">d6</span> • Presságio: <span class="kbd">d100</span> • Choque: <span class="kbd">D12</span>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button class="btn small" onclick="goTo('index.html')">← Voltar ao Festival</button>
+        <button class="btn small" onclick="doTreasure('treasureBox2')">🎲 Sorteio de Tesouro</button>
+      </div>
+    </div>
+
+    <div id="treasureBox2" class="grid"></div>
+
+    <div class="grid two">
+      <div class="card">
+        <h2 class="section-title">O Momento Após o Estouro</h2>
+        <div class="readaloud">
+          <span class="dropcap">V</span>
+          ocês sentem a vibração na língua — como trovão preso dentro dos dentes.
+          A praça inteira parece ter engolido saliva e esquecido de engolir de novo.
+          <br><br>
+          A gosma violeta não “cai”. Ela <em>se encontra</em> com as coisas:
+          escorre por juntas, sobe em madeira e pedra como se procurasse fendas pequenas para morar.
+          Quando toca o dourado das fitas, a cor desbota, como se alguém apagasse festa com um pano úmido.
+          <br><br>
+          Gritos cortam o ar. Fogo procura tecido.
+          A multidão tenta correr em todas as direções — e por isso, não vai a lugar nenhum.
+          <br><br>
+          No centro, onde o corpo se desfez, o ar <em>não obedece</em>.
+          Ele dobra, escurece e revela um rasgo gótico: alto, estreito, como um portal de catedral em negativo.
+          As bordas são negras com veios púrpura — nervuras, não rachaduras.
+          De lá vem um frio que cheira a distância, como se o mundo do outro lado fosse muito longe
+          mesmo estando a poucos passos.
+          <br><br>
+          E vocês percebem a pior parte:
+          não é só “perigo”.
+          É <em>convite</em>.
+          A praça está morrendo de medo.
+          O rasgo está… curioso.
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Irmã Calíria (em cena):</strong><br/>
+          Ela aparece com cinza no rosto e mãos firmes.
+          O sino rachado no pescoço não toca — mas vibra como se tivesse ouvido uma mentira grande.
+          <br/><br/>
+          “Escutem”, ela diz baixo, rápido. “A gente escolhe agora.
+          Ou a praça escolhe por nós.”
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Mestre — câmera em 6 (anti-travamento já no início):</strong><br/>
+          <em>Jogador 1:</em> quem você protege primeiro?<br/>
+          <em>Jogador 2:</em> o que você faz nos primeiros 3 segundos?<br/>
+          <em>Jogador 3:</em> qual detalhe do rasgo te dá certeza de que isso não é magia comum?<br/>
+          <em>Jogador 4:</em> você grita ordens ou age em silêncio?<br/>
+          <em>Jogador 5:</em> qual cheiro/som do caos te tira do prumo?<br/>
+          <em>Jogador 6:</em> você ouve seu nome? (ou algo que parece seu nome?)
+        </div>
+
+        <hr class="sep"/>
+
+        <h2 class="section-title">Relógio de Ruína da Praça (manual)</h2>
+        <div class="note">
+          Avance +1 quando: (a) o grupo travar muito tempo, (b) falhar 2 testes seguidos, (c) fogo avançar sem conter,
+          (d) alguém falar um “nome” em voz alta pro rasgo.
+          <br/><br/>
+          <span class="tag">[0/4]</span><span class="tag">[1/4]</span><span class="tag">[2/4]</span><span class="tag">[3/4]</span><span class="tag">[4/4]</span>
+          <br/><br/>
+          <strong>Em [4/4]:</strong> a praça “cedeu” — o rasgo aprende um pouco mais (pista + consequência).
+        </div>
+
+        <hr class="sep"/>
+
+        <h2 class="section-title">Anti-travamento: Reação do Mundo (role d6 quando travarem)</h2>
+        <div class="note">
+          <strong>1</strong> — Um sino toca uma vez (errado). Três pessoas levam a mão ao peito ao mesmo tempo.<br/>
+          <strong>2</strong> — Alguém grita um nome e depois jura que não foi sua voz.<br/>
+          <strong>3</strong> — A gosma “sobe” um degrau e para, como se tivesse decidido observar.<br/>
+          <strong>4</strong> — Um civil cai e a multidão pisa sem querer. Alguém precisa agir.<br/>
+          <strong>5</strong> — O fogo muda de direção sem vento. Como se evitasse uma área específica.<br/>
+          <strong>6</strong> — A multidão abre caminho como se algo estivesse chegando (mas nada aparece).
+        </div>
+
+        <hr class="sep"/>
+
+        <h2 class="section-title">Escolha um caminho (cada um vira um arquivo)</h2>
+        <div class="top-actions">
+          <button class="btn alt" onclick="choosePath('resgate')">Caminho do Resgate</button>
+          <button class="btn danger" onclick="choosePath('combate')">Caminho do Combate</button>
+          <button class="btn" onclick="choosePath('investigacao')">Caminho da Investigação</button>
+        </div>
+
+        <div class="details" style="margin-top:12px">
+          <h3>Como decidir sem travar (Calíria empurra)</h3>
+          <ul>
+            <li><strong>Resgate:</strong> Calíria aponta: “Tem gente presa. Agora.”</li>
+            <li><strong>Combate:</strong> Calíria recua: “Tem coisa saindo do chão. Se encostar, alguém morre.”</li>
+            <li><strong>Investigação:</strong> Calíria encara o rasgo: “Se a gente não entender, isso volta.”</li>
+          </ul>
+          <p class="muted">Ao concluir o caminho, o arquivo manda vocês para <span class="kbd">fase3.html</span>.</p>
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Semente de enigma (não explique — só mostre):</strong><br/>
+          Se alguém olhar pro rasgo tempo demais, role <span class="kbd">d100</span>:<br/>
+          <strong>01–30</strong> nada (só frio) • <strong>31–60</strong> um “NOME” quase forma na garganta •
+          <strong>61–85</strong> um vitral aparece no ar e some • <strong>86–99</strong> alguém ouve seu nome dito errado •
+          <strong>100</strong> a praça se vê como ruína futura por 1 segundo.
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title">Painel do Mestre — ritmo</h2>
+
+        <div class="details">
+          <h3>Regra simples: nunca “nada acontece”</h3>
+          <ul>
+            <li>Se o grupo discutir demais: role <span class="kbd">d6</span> (Reação do Mundo) e escolha 1 jogador.</li>
+            <li>Faça 1 pergunta direta: <em>“O que você faz agora?”</em></li>
+            <li>Depois ofereça 3 opções curtas: <strong>salvar</strong> / <strong>cortar</strong> / <strong>entender</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="details" style="margin-top:12px">
+          <h3>Falhas não travam: elas mudam a cena</h3>
+          <ul>
+            <li>Falha = perde tempo + piora do cenário (fogo, multidão, gosma, pânico inteligente).</li>
+            <li>Sucesso instável = resolve, mas custa (fôlego, item, ferimento leve, culpa).</li>
+            <li>20 = resolve e revela algo horrível (pista + arrepio).</li>
+          </ul>
+        </div>
+
+        <div class="footer">Escolha um caminho e mantenha a câmera rodando.</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      A Pustulância de Hadar • Fase 2: escolha de caminho (cada caminho é um arquivo).
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

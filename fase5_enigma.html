@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A Pustulância de Hadar — Fase 5 (Enigma Final)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <h1>O Enigma Final — A Senha da Costura</h1>
+        <div class="subtitle">Quando o mundo é ferido, só uma palavra fecha a boca da ferida</div>
+        <div class="pill">Pistas: <span class="kbd">5 letras</span> • Senha: <span class="kbd">nome</span> • Destino: <span class="kbd">Fase 6</span></div>
+      </div>
+      <div class="top-actions">
+        <button class="btn small" onclick="goTo('fase5.html')">← Voltar ao HUB</button>
+        <button class="btn small alt" onclick="clearP5()">Limpar pistas</button>
+      </div>
+    </div>
+
+    <div class="grid two">
+      <div class="card">
+        <h2 class="section-title">A Parábola do Coração</h2>
+
+        <div class="readaloud">
+          <span class="dropcap">V</span>
+          ocês deixam a câmara do coração… mas o coração não deixa vocês.
+          Ele continua pulsando dentro da lembrança, como se a memória fosse músculo.
+          <br><br>
+          A masmorra não é só pedra e sombra.
+          Ela é uma ideia doente.
+          E ideias doentes se alimentam do que vocês chamam as coisas.
+          <br><br>
+          Vocês ouviram parábolas no vitral.
+          Vocês viram letras surgirem onde não deveria haver escrita.
+          E agora a passagem pede uma coisa simples e cruel:
+          <strong>um nome</strong>.
+          <br><br>
+          Não um som.
+          Um nó.
+          Uma palavra que <em>costura</em>.
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Mestre — última câmera antes da senha:</strong><br/>
+          <em>Jogador 1, você diz a senha com orgulho ou com medo?</em><br/>
+          <em>Jogador 2, você acredita que a senha fecha… ou abre?</em><br/>
+          <em>Jogador 3, você teme perder seu nome?</em><br/>
+          <em>Jogador 4, você já esqueceu algo desde que entrou na fenda?</em><br/>
+          <em>Jogador 5, o que você faria para “devolver um mundo”?</em><br/>
+          <em>Jogador 6, você confia no ouro… ou no roxo?</em>
+        </div>
+
+        <hr class="sep"/>
+
+        <h2 class="section-title">Pistas registradas</h2>
+        <div id="clueStatus" class="note">Carregando pistas…</div>
+
+        <div class="details" style="margin-top:12px">
+          <h3>Como resolver</h3>
+          <p>
+            Vocês anotaram 5 letras ao longo do caminho.
+            Juntem as letras.
+            A senha é uma palavra que resume o tema da masmorra.
+          </p>
+          <p class="muted">
+            Dica final: “Só o nome passa.”
+            <br/>Pergunta que sobra: <em>passa para onde?</em>
+          </p>
+        </div>
+
+        <hr class="sep"/>
+
+        <h2 class="section-title">Digite a senha</h2>
+        <div class="details">
+          <input id="senha" class="input" type="text" placeholder="Digite a senha..." style="width:100%; padding:12px; border-radius:12px; border:1px solid rgba(255,255,255,.12); background:rgba(0,0,0,.35); color:#fff;" />
+          <div class="top-actions" style="margin-top:12px">
+            <button class="btn alt" onclick="checkSenha()">Abrir a Passagem →</button>
+            <button class="btn small" onclick="revealHint()">Quero uma dica</button>
+            <button class="btn small alt" onclick="softHint()">Quero uma dica leve</button>
+          </div>
+          <div id="senhaOut" class="note" style="margin-top:12px">
+            Se a senha estiver correta, a costura se abre e vocês seguem.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title">Painel do Mestre — Enigma</h2>
+
+        <div class="details">
+          <h3>O que fazer se travarem</h3>
+          <ul>
+            <li>Repita: “nome é nó”, “nome prende”, “só o nome passa”.</li>
+            <li>Faça o vitral mostrar a palavra como sombra, sem dar todas as letras.</li>
+            <li>Se ainda travar: peça que eles digam “o tema da masmorra” em 1 palavra.</li>
+          </ul>
+        </div>
+
+        <div class="details" style="margin-top:12px">
+          <h3>Conexão com o depois</h3>
+          <ul>
+            <li>Quando a senha for dita, escolha 1 detalhe que “muda” (um cheiro, um som, uma cor) para marcar consequência.</li>
+            <li>Mais tarde, alguém fora da masmorra pronuncia um nome errado — e isso vira gancho.</li>
+          </ul>
+        </div>
+
+        <div class="footer">Quando você pedir, eu escrevo a próxima etapa já conectada a esse gancho.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // senha padrão (pode trocar depois)
+    const SENHA = "NOMES";
+
+    function getP5(){
+      try { return (typeof getRunState==='function') ? (getRunState('p5clues', {})||{}) : (JSON.parse(localStorage.getItem('p5clues')||'{}')); }
+      catch(e){ return {}; }
+    }
+    function setP5(v){
+      try { if(typeof setRunState==='function') setRunState('p5clues', v); else localStorage.setItem('p5clues', JSON.stringify(v)); }
+      catch(e){}
+    }
+    function clearP5(){
+      setP5({});
+      renderClues();
+      document.getElementById('senhaOut').innerHTML = "Pistas limpas. O mundo parece respirar… e depois lembrar que não devia.";
+    }
+
+    function renderClues(){
+      const c = getP5();
+      const needed = ["N","O","M","E","S"];
+      const have = needed.filter(k => !!c[k]);
+
+      const status = needed.map(k => c[k] ? `<span class="tag">${k}</span>` : `<span class="tag" style="opacity:.35">${k}</span>`).join(" ");
+      const line = `
+        <div><strong>Esperado:</strong> ${needed.join(" ")}</div>
+        <div style="margin-top:8px"><strong>Status:</strong> ${status}</div>
+        <div style="margin-top:8px" class="muted">Registradas: ${have.length}/5</div>
+      `;
+      document.getElementById('clueStatus').innerHTML = line;
+    }
+
+    function softHint(){
+      const out = document.getElementById('senhaOut');
+      out.innerHTML = `
+        <strong>Dica leve:</strong> A palavra está no plural.
+        <br/>E é aquilo que o Coração exige para “devolver um mundo”.
+      `;
+    }
+
+    function revealHint(){
+      const out = document.getElementById('senhaOut');
+      out.innerHTML = `
+        <strong>Dica:</strong> A palavra é o plural daquilo que Hadar exige.
+        <br/>E é a coisa que “prende” alguém ao mundo.
+        <br/><span class="muted">Se vocês juntaram as letras, a palavra já está na mesa.</span>
+      `;
+    }
+
+    function checkSenha(){
+      const val = (document.getElementById('senha').value || "").trim().toUpperCase();
+      const out = document.getElementById('senhaOut');
+
+      if(!val){
+        out.innerHTML = "Diga alguma coisa. Aqui, silêncio também assina contrato.";
+        return;
+      }
+
+      if(val === SENHA){
+        out.innerHTML = `
+          <p><span class="tag">CORRETO</span></p>
+          <div class="readaloud">
+            A palavra encaixa na costura do mundo como chave em ferida.
+            O vitral inteiro brilha em dourado por um segundo — e o roxo recua, irritado.
+            A passagem se abre como uma porta que estava fingindo ser parede.
+            <br><br/>
+            E antes de vocês seguirem, a voz sem boca sussurra:
+            <em>“OBRIGADO. AGORA EU SEI COMO VOCÊS SE CHAMAM… QUANDO TÊM MEDO.”</em>
+          </div>
+        `;
+        setTimeout(() => goTo('fase6.html'), 800);
+        return;
+      }
+
+      // resposta errada: consequência narrativa leve (sem travar)
+      out.innerHTML = `
+        <p><span class="tag">ERRADO</span></p>
+        <div class="readaloud">
+          A costura não abre. Ela <em>aperta</em>.
+          A palavra volta para a boca com gosto metálico, como se o coração tivesse provado e cuspido.
+          <br><br>
+          Por um instante, você esquece uma palavra simples — e ela volta um segundo depois,
+          como se o mundo tivesse testado sua memória.
+          <br><br>
+          Tentem de novo. E lembrem: <em>“só o nome passa.”</em>
+        </div>
+      `;
+    }
+
+    renderClues();
+  </script>
+</body>
+</html>

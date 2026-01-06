@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A Pustulância de Hadar — Fase 1 (Festival)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <h1>A Pustulância de Hadar</h1>
+        <div class="subtitle">Alta Fantasia • Horror Gótico • Campanha 100% no navegador</div>
+        <div class="pill">
+          Fluxo: <span class="kbd">antes → fase1 → fase2 → fase3 → fase4 → fase5</span> •
+          Caos: <span class="kbd">d6</span> • Presságios: <span class="kbd">d100</span> • Choque: <span class="kbd">D12</span>
+        </div>
+      </div>
+
+      <div class="top-actions">
+        <button class="btn small alt" onclick="goTo('antes.html')">📜 Antes de Tudo</button>
+        <button class="btn small" onclick="doTreasure('treasureBox')">🎲 Sorteio de Tesouro</button>
+        <button class="btn small alt" onclick="goTo('fase2.html')">Ir para Fase 2 →</button>
+      </div>
+    </div>
+
+    <div id="treasureBox" class="grid"></div>
+
+    <div class="grid two">
+
+      <!-- =======================
+           COLUNA PRINCIPAL
+      ======================== -->
+      <div class="card">
+
+        <h2 class="section-title">Prólogo — Brumárion, a Cidade que Sorri para Não Gritar</h2>
+        <div class="readaloud">
+          <span class="dropcap">B</span>
+          rumárion não foi construída — foi <em>convencida</em> a existir.
+          Pedras claras arrancadas do leito do rio, arcos altos como costelas, torres de sino que marcam as horas
+          como quem marca cicatrizes antigas. A cidade cresceu onde neblina e comércio se encontram: um porto fluvial
+          que leva especiarias e aço, e traz promessas e gente que prefere não contar de onde veio.
+          <br><br>
+          De dia, Brumárion é dourada: telhados com filetes de cobre, letreiros de metal polido,
+          vitrais modestos em janelas estreitas. De noite, ela vira roxa — não pela cor, mas pela sensação:
+          sombras compridas, becos frios, a impressão de que certas ruas têm memória.
+          <br><br>
+          Os velhos dizem que há noites em que o céu fica “com costuras abertas”.
+          Não é poesia. É aviso. E existe uma regra sussurrada por toda boca que ainda lembra medo:
+          <em>se você chamar a coisa pelo nome, ela pode responder</em>.
+        </div>
+
+        <hr class="sep"/>
+
+        <!-- =======================
+           FESTIVAL (AMBIENTAÇÃO VIVA)
+      ======================== -->
+        <h2 class="section-title">Abertura do Festival (câmera geral — ecossistema vivo)</h2>
+        <div class="readaloud">
+          <span class="dropcap">H</span>
+          oje, Brumárion veste o melhor sorriso. É o <em>Festival do Dossel Dourado</em>.
+          Fitas roxas e douradas pendem como penas de aves exóticas.
+          Barracas cantam com cheiros: pão doce com mel, peixe assado com ervas, maçãs caramelizadas,
+          vinho barato, incenso vendido como “proteção”.
+          <br><br>
+          O festival é um ecossistema: crianças correm com máscaras de corvo e estrelas,
+          músicos afinam instrumentos, guardas fazem “cara de tédio” para não assustar civis,
+          ratos ficam mais gordos perto das barracas, pombos disputam migalhas como se fossem reinos.
+          O rio carrega barquinhos de papel com velas pequenas e promessas escritas.
+          <br><br>
+          Mas por baixo da alegria, existe um detalhe que não encaixa:
+          um <em>gosto metálico</em> aparece na língua — discreto, insistente, como se o ar tivesse uma gota de sangue dissolvida.
+          Alguns riem alto demais. Alguns evitam olhar para cima.
+          E alguém, em algum lugar, está esperando um momento exato… como relógio.
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Mestre — rodada de 2 frases (obrigatório):</strong><br/>
+          “Em 2 frases: onde a câmera pega você no festival (luz/sombra), e qual detalhe te denuncia (objeto, cicatriz, jeito de andar, cheiro).”
+        </div>
+
+        <hr class="sep"/>
+
+        <!-- =======================
+           COMPLEMENTO — ANTES DO CHAMADO (SEM MISTICISMO)
+      ======================== -->
+        <h2 class="section-title">Antes do Chamado — O Festival Rodando (Calíria costura vocês, sem magia)</h2>
+        <div class="readaloud">
+          <span class="dropcap">A</span>
+          festa ainda não começou de verdade — ela está trabalhando.
+          Tem fita que cai e precisa ser presa de novo.
+          Tem caixa que “andou” de lugar.
+          Tem barraca torta que vai desabar no primeiro empurrão.
+          Tem gente demais querendo espaço e pouca paciência para dividir.
+          <br><br>
+          Irmã Calíria atravessa isso tudo como quem faz malabarismo com problemas pequenos.
+          Ela não procura “os escolhidos”.
+          Procura mãos, olhos, postura, presença.
+          Procura gente que resolva.
+          <br><br>
+          E, sem vocês perceberem, a cada pessoa que ela chama,
+          a pessoa anterior acaba seguindo — por obrigação, curiosidade, senso de responsabilidade,
+          ou porque Calíria tem aquele tipo de autoridade de quem está mantendo a festa inteira em pé.
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Mestre — regra do fio (não-místico):</strong><br/>
+          Calíria aborda 1 personagem por vez. Em cada abordagem ela deixa um micro-trabalho, uma pergunta direta,
+          ou uma responsabilidade (“segura isso”, “fica comigo 1 minuto”, “me ajuda a resolver”).
+          <br/>
+          Quando ela se afasta, o personagem naturalmente passa a acompanhá-la — e o “cortejo” atrás dela cresce.
+        </div>
+
+        <hr class="sep"/>
+
+        <!-- =======================
+           CENA 0 — O ENCONTRO
+      ======================== -->
+        <h2 class="section-title">Cena 0 — Um Pedido Simples (onde vocês finalmente se encontram)</h2>
+        <div class="readaloud">
+          <span class="dropcap">N</span>
+          uma ruela lateral do festival, longe do palco principal, o cheiro é de pão quente e ervas esmagadas.
+          Caixas empilhadas. Cestos. Panos de linho. Gente passando rápido demais.
+          Aqui, a festa parece menos festa… e mais cidade trabalhando para fingir normalidade.
+          <br><br>
+          Vocês não chegam juntos por destino: chegam porque a organização do festival está estourando em detalhes.
+          Um por um, vocês foram “puxados” por pedidos pequenos e urgentes — e agora, sem combinar,
+          acabam no mesmo ponto como se fosse a coisa mais normal do mundo.
+          <br><br>
+          Uma mulher de manto claro ergue a mão quando vê vocês.
+          Ela não grita. Não acena.
+          Ela <em>reconhece</em>.
+          <br><br>
+          “Graças ao céu”, diz.
+          “Eu precisava de gente que ainda não estivesse ocupada… e que parecesse saber voltar quando algo quebra.”
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Irmã Calíria (NPC — a pessoa que une o grupo)</strong><br/>
+          Curandeira leiga e organizadora do Festival do Dossel Dourado. Ela distribui comida, acalma crianças,
+          costura feridas pequenas e “fecha” brigas antes que virem notícia.
+          <br/><br/>
+          • <strong>Detalhe:</strong> ela usa no pescoço um <em>sino dourado rachado</em>. Não toca — mas vibra de leve quando alguém mente.<br/>
+          • <strong>Hábito:</strong> ela toca o braço de quem fala, como âncora. E chama as pessoas pelo nome com naturalidade demais.<br/>
+          • <strong>Vibe:</strong> bondade prática, sem poesia. Mas o olhar dela já viu coisa que não deveria existir.
+        </div>
+
+        <div class="details" style="margin-top:12px">
+          <h3>O pedido (simples, mas que costura destino)</h3>
+          <p>
+            Calíria precisa de um grupo pequeno para fazer uma coisa banal:
+            <strong>buscar um caixote</strong> que “sumiu” do depósito do festival e entregar na praça central.
+            É um caixote com fitas roxas e um lacre de cera dourada.
+          </p>
+          <ul>
+            <li><strong>Se perguntarem “o que tem dentro?”</strong>: “Coisas do festival. Nada que valha briga.” (e ela evita olhar pra caixa)</li>
+            <li><strong>Se insistirem</strong>: “Eu só preciso que vocês tragam. E tragam sem abrir.”</li>
+            <li><strong>Se recusarem</strong>: ela suspira e diz: “Tudo bem. Então me digam quem aqui é bom em lidar com pânico — porque eu não posso perder a praça pra uma correria.”</li>
+          </ul>
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Mestre — Câmera em 6 (faça todos falarem):</strong><br/>
+          <em>Jogador 1:</em> por que você aceitaria ajudar uma estranha?<br/>
+          <em>Jogador 2:</em> o que no olhar dela te convence (ou te incomoda)?<br/>
+          <em>Jogador 3:</em> você confia em “não abrir” ou acha que deve checar?<br/>
+          <em>Jogador 4:</em> qual detalhe te diz que isso vai dar errado?<br/>
+          <em>Jogador 5:</em> você percebe algo na caixa (cheiro, peso, vibração)?<br/>
+          <em>Jogador 6:</em> quem do grupo você observaria mais de perto — e por quê?
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Sistema Anti-Travamento (use sempre que travarem):</strong><br/>
+          Se o grupo hesitar tempo demais, o mundo reage com um empurrão:
+          <br/>
+          • um sino toca ao longe (1 toque só) • uma criança cai chorando • alguém grita um nome errado • o ar fica metálico.
+          <br/>
+          <strong>Depois você pergunta:</strong> <em>“Quem reage primeiro?”</em>
+        </div>
+
+        <hr class="sep"/>
+
+        <!-- =======================
+           AS 6 ABORDAGENS (NO LUGAR DAS FENDAS)
+      ======================== -->
+        <h2 class="section-title">As 6 Abordagens de Calíria (spotlight + “classes” sentidas)</h2>
+
+        <div class="readaloud">
+          Calíria não fala “classe” nem “atributo”. Ela só reconhece <em>por onde você funciona</em>.
+          Em cada encontro ela escolhe um jeito diferente de falar — e um problema real do festival para você resolver.
+          <br><br>
+          <strong>Importante:</strong> até aqui, tudo é cotidiano (logística, festa, pessoas). O místico só entra depois que vocês estiverem juntos.
+        </div>
+
+        <div class="list">
+
+          <!-- 1 -->
+          <div class="details">
+            <h3>Abordagem 1 — Mente (atenção, leitura, intuição) — Portal de Fitas</h3>
+            <p class="readaloud">
+              Um arco de madeira marca a entrada.
+              Fitas douradas e roxas batem como asas cansadas.
+              Um guarda carimba pulsos com tinta violeta — “selo do evento”.<br><br>
+              A fila não está caótica.<br>
+              Ainda.<br><br>
+              Mas existe um padrão errado:
+              um vendedor responde sempre um segundo depois do tom certo,
+              o guarda já mudou o peso do corpo para a perna da frente,
+              duas pessoas atrás começam a se aproximar demais.<br><br>
+              Calíria não invade seu espaço.<br>
+              Ela para onde você parou, olhando exatamente para o mesmo ponto.<br>
+              Ela não começa com um pedido.<br>
+              É o tipo de situação que não explode sozinha — alguém precisa empurrar.
+              <br><br>
+              Calíria chega ao seu lado sem interromper seu olhar.
+              Ela fala baixo, como se comentasse um relatório:
+              <br/>
+              <em>“Isso aqui não vai virar briga por causa da fila.”</em><br/>
+              Uma pausa curta.<br><br>
+
+              <em>“Vai virar por causa de quem falar primeiro do jeito errado.”</em><br/>
+              Ela vira o rosto o mínimo possível, só o bastante para te incluir.<br><br>
+
+              <em>“Você tá vendo isso antes deles.”</em><br/>
+              Outro silêncio — não constrangedor, avaliativo.<br><br>
+
+              <em>“Me diz onde isso quebra…<br/>
+              e qual é o jeito mais limpo de impedir sem fazer ninguém perder a cara.”</em><br/>
+              Se você responde, ela escuta sem interromper. Se você hesita, ela completa:<br><br>
+
+              <em>“Eu tenho cinco outros problemas agora. Esse aqui só vira incêndio se ninguém enxergar.”</em><br/>
+              Ela não diz “me ajuda”. Ela dá responsabilidade implícita.<br/>
+              Quando começa a andar para o lado da fila, ela já assume:<br><br>
+
+              <em>“Vem comigo. Se você apontar o gatilho certo, eu seguro o resto.”</em><br/>
+              E segue — no ritmo de quem espera que você acompanhe.<br><br>
+
+            </p>
+
+            <div class="note">
+              <strong>Pergunta direta:</strong> qual detalhe entrega que isso vai dar errado?<br/>
+              <strong>Micro-tarefa:</strong> reorganizar a fila / separar o foco do conflito / notar o “gatilho” humano (quem provoca quem).<br/>
+              <strong>Se quiser rolar:</strong> <strong>Percepção</strong> ou <strong>Intuição</strong> (D20, D12/D13).
+            </div>
+
+            <div class="note">
+              <strong>Espectro (D20):</strong><br/>
+              1–4: você escolhe o alvo errado • 5–9: resolve, mas alguém fica ofendido • 10–14: fila anda • 15–19: resolve e acalma • 20: você prevê a próxima confusão antes dela nascer.
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="details">
+            <h3>Abordagem 2 — Corpo (força, reflexo, resistência) — Rua dos Aromas</h3>
+            <p class="readaloud">
+              A Rua dos Aromas é estreita e quente.
+              Fumaça sobe em colunas baixas.
+              Pão doce, peixe assado, açúcar queimado disputam o ar.<br><br>
+
+              Um carrinho pesado atravessa a rua errado.
+              Barris rangem.
+              Um ajudante puxa na hora errada.
+              A multidão diminui o passo — primeiro sinal de problema.<br><br>
+
+              Alguém tropeça.<br>
+              Não cai.<br>
+              Ainda.<br><br>
+
+              Calíria chega rápido, mas não correndo.
+              Ela observa um segundo a mais que os outros.
+              Quando o carrinho dá um solavanco, ela já está perto de você.<br><br>
+
+              Ela segura seu braço no último instante.
+              Não é força bruta — é precisão.
+              O tipo de toque de quem sabe exatamente quanto peso aguenta.<br><br>
+
+              <em>“Reflexo bom.”</em><br>
+              Ela solta antes que vire constrangimento.<br><br>
+
+              Um barril ameaça rolar.
+              Um grito começa a subir na garganta de alguém.
+              O clima muda rápido demais.<br><br>
+
+              Calíria aponta com o queixo, sem dramatizar:<br><br>
+
+              <em>“Se isso cair, vira pânico.”</em><br>
+              Uma pausa curta.<br><br>
+
+              <em>“E pânico machuca mais gente do que peso.”</em><br><br>
+
+              Ela te avalia pelo jeito que você ocupa espaço.
+              Ombros.
+              Base.
+              Respiração.<br><br>
+
+              <em>“Você aguenta.”</em><br>
+              Não é pergunta.<br><br>
+
+              <em>“Me ajuda a tirar isso daqui sem ninguém se machucar.”</em><br><br>
+
+              Ela já começa a empurrar a multidão para abrir corredor.
+              Não espera confirmação.<br><br>
+
+              <em>“Vem. Eu seguro o entorno.”</em><br>
+              <em>“Você segura o peso.”</em><br><br>
+
+              E segue andando, abrindo espaço com palavras curtas,
+              no ritmo de quem sabe que você vem logo atrás.<br><br>
+            </p>
+
+            <div class="note">
+              <strong>Pergunta direta:</strong> quando a coisa pesa, você empurra… ou você muda a abordagem?<br/>
+              <strong>Micro-tarefa:</strong> destravar carrinho / abrir corredor / impedir queda de barril.<br/>
+              <strong>Se quiser rolar:</strong> <strong>Atletismo</strong>, <strong>Acrobacia</strong> ou <strong>Sobrevivência</strong> (D20, D12).
+            </div>
+
+            <div class="note">
+              <strong>Espectro (D20):</strong><br/>
+              1–4: alguém se machuca leve • 5–9: resolve, mas faz cena • 10–14: resolve • 15–19: resolve e protege civis • 20: você faz parecer fácil.
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="details">
+            <h3>Abordagem 3 — Inteligência (análise, estratégia, improviso) — Barraca de Relíquias</h3>
+            <p class="readaloud">
+              A barraca é escura demais para o meio do dia.
+              Veludo pesado cobre a mesa.
+              Amuletos, “ossos de santo”, moedas antigas, espelhos dourados
+              organizados de um jeito que parece caótico — mas não é.<br><br>
+
+              O dono sorri curto.
+              O sorriso de quem já explicou a mesma mentira cem vezes
+              e sabe exatamente quando repetir cada palavra.<br><br>
+
+              Um pouco afastado, alguém do festival discute em voz baixa:
+              fichas que não batem,
+              troco errado,
+              um “combinado” que mudou no meio do caminho.<br><br>
+
+              Ninguém grita.
+              Ainda assim, algo já está errado.<br><br>
+
+              Calíria não chega apontando dedo.
+              Ela não chama atenção.
+              Ela observa dois segundos a mais que o resto —
+              e então te olha como quem escolhe a ferramenta certa na bolsa.<br><br>
+
+              Ela fala baixo, quase burocrática:<br/><br>
+
+              <em>“Eu preciso que você encontre o truque…”</em><br>
+              Uma pausa breve.<br><br>
+
+              <em>“…sem transformar isso em escândalo.”</em><br><br>
+
+              O dono da barraca continua sorrindo.
+              A pessoa do festival continua discutindo.
+              Tudo parece normal para quem passa.<br><br>
+
+              Calíria continua, agora direta com você:<br/><br>
+
+              <em>“Me diz onde tá o golpe…”</em><br>
+              <em>“e como eu corto ele sem humilhar ninguém.”</em><br><br>
+
+              Ela não pede rapidez.
+              Ela pede método.<br><br>
+
+              <em>“Se isso vira cena, eu perco três barracas e ganho um boato.”</em><br>
+              <em>“Se some direito, ninguém lembra que existiu.”</em><br><br>
+
+              Ela se afasta meio passo,
+              te deixando exatamente no ângulo certo para observar.<br><br>
+
+              <em>“Vê como você prefere.”</em><br>
+              <em>“Eu confio no caminho que você escolher.”</em><br><br>
+
+              E fica ali, cuidando do entorno,
+              como alguém que já assumiu que você vai resolver.<br><br>
+            </p>
+
+            <div class="note">
+              <strong>Pergunta direta:</strong> qual é a solução “feia”, mas eficiente, que você evita usar?<br/>
+              <strong>Micro-tarefa:</strong> identificar fraude / negociar / recuperar fichas / expor sem humilhar.<br/>
+              <strong>Se quiser rolar:</strong> <strong>Investigação</strong> (D20, D13).
+            </div>
+
+            <div class="note">
+              <strong>Espectro (D20):</strong><br/>
+              1–4: você compra a mentira • 5–9: acha parte do truque • 10–14: acha o truque • 15–19: desmonta com classe • 20: o dono te respeita (mesmo odiando).
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="details">
+            <h3>Abordagem 4 — “Poder” (presença, fé, aura, magia ou reputação) — Fonte Central</h3>
+            <p class="readaloud">
+              Antes de se afastar, Calíria diminui o passo e fala com o grupo,
+              sem parar de andar:<br><br>
+
+              <em>“Eu preciso chamar mais gente.”</em><br>
+              <em>“É pro bem maior — e eu não consigo fazer isso sozinha.”</em><br>
+              Ela não espera resposta.<br><br>
+
+              <em>“Continuem me acompanhando.”</em><br>
+              Uma pausa curta, quase um cálculo.<br><br>
+
+              <em>“Acho que já vi o próximo.”</em><br><br>
+
+              A praça se abre em torno da Fonte Central.
+              Água cai constante.
+              Moedas brilham no fundo como olhos virados para cima.<br><br>
+
+              Uma criança chora.
+              Não é escândalo — ainda.
+              Três adultos se atropelam em opiniões.
+              Um guarda observa de longe, avaliando se “vira caso”.<br><br>
+
+              Calíria não corre até a criança.
+              Ela para alguns passos antes e olha para você.<br><br>
+
+              O jeito que ela te mede não tem poesia.
+              Não é o que você diz.
+              Não é o que você faz.
+              É o que você <em>carrega</em> quando entra num espaço.<br><br>
+
+              Tem gente que acalma com voz.
+              Tem gente que acalma só por estar perto.<br><br>
+
+              Ela fala baixo, como sempre:<br/><br>
+
+              <em>“Você consegue fazer a multidão abrir espaço…”</em><br>
+              <em>“sem assustar a criança?”</em><br><br>
+
+              Ela observa as reações ao redor.
+              O guarda.
+              Os adultos.
+              O choro.<br><br>
+
+              <em>“Eu preciso do seu jeito.”</em><br>
+              <em>“Só isso.”</em><br><br>
+
+              Antes mesmo de você responder,
+              Calíria já começa a afastar os curiosos com gestos simples,
+              confiando que você vai ocupar o centro.<br><br>
+
+              <em>“Vem.”</em><br>
+              <em>“Fica entre eles e ela.”</em><br><br>
+
+              E permanece ali,
+              cuidando do entorno,
+              como alguém que já assumiu que a situação está nas suas mãos.<br><br>
+            </p>
+
+            <div class="note">
+              <strong>Pergunta direta:</strong> o que em você faz os outros recuarem (ou obedecerem) sem você pedir?<br/>
+              <strong>Micro-tarefa:</strong> organizar busca / acalmar criança / coordenar civis.<br/>
+              <strong>Se quiser rolar:</strong> <strong>Persuasão</strong>, <strong>Intimidação</strong> ou <strong>Religião/Arcanismo</strong> (D20, D13/D14) — mas ainda como “método”, não como presságio.
+            </div>
+
+            <div class="note">
+              <strong>Espectro (D20):</strong><br/>
+              1–4: a criança se assusta • 5–9: resolve, mas atrai atenção • 10–14: resolve • 15–19: resolve e acalma a praça • 20: a multidão “abre” como mar.
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="details">
+            <h3>Abordagem 5 — Vontade (carisma, liderança, coração) — Círculo de Música</h3>
+            <p class="readaloud">
+              O palco vibra.
+              Palmas, risos, passos marcando ritmo no chão.
+              Por um momento, tudo é só festa.<br><br>
+
+              Então um músico erra a entrada.
+              Um erro pequeno.
+              Pequeno demais para virar problema — se ninguém empurrar.<br><br>
+
+              Um grupo começa a vaiar.
+              Primeiro rindo.
+              Depois insistindo.
+              O riso muda de tom.<br><br>
+
+              Um guarda endurece o rosto.
+              Não por raiva.
+              Por dever.<br><br>
+
+              Calíria não entra no meio da roda.
+              Ela espera a brecha.
+              Meio compasso de silêncio entre uma vaia e outra.<br><br>
+
+              Ela se inclina na sua direção, voz baixa,
+              quase perdida no som:<br/><br>
+
+              <em>“Você fala com gente.”</em><br>
+              <em>“E gente te ouve.”</em><br><br>
+
+              Ela observa o foco da vaia,
+              o músico tentando se recompor,
+              o guarda se preparando para avançar.<br><br>
+
+              <em>“Se isso vira ordem, vira confusão.”</em><br>
+              Uma pausa curta.<br><br>
+
+              <em>“Se vira riso de novo…”</em><br>
+              <em>“…a festa continua.”</em><br><br>
+
+              Ela te olha direto, agora sem rodeio:<br/><br>
+
+              <em>“Se você virar isso em riso de novo,”</em><br>
+              <em>“eu te devo uma.”</em><br><br>
+
+              Antes que você responda,
+              Calíria já faz um gesto discreto para o guarda esperar.
+              Um gesto pequeno.
+              Confiável.<br><br>
+
+              <em>“Vai.”</em><br>
+              <em>“Agora.”</em><br><br>
+
+              E fica logo atrás,
+              observando a multidão mudar de humor,
+              como quem já sabe que você vai assumir o centro.<br><br>
+            </p>
+
+            <div class="note">
+              <strong>Pergunta direta:</strong> quando você precisa convencer alguém, você usa charme… ou verdade?<br/>
+              <strong>Micro-tarefa:</strong> transformar vaia em aplauso / evitar intervenção / tirar o foco do erro.<br/>
+              <strong>Se quiser rolar:</strong> <strong>Performance</strong>, <strong>Persuasão</strong> ou <strong>Enganação</strong> (D20, D13).
+            </div>
+
+            <div class="note">
+              <strong>Espectro (D20):</strong><br/>
+              1–4: vira confusão • 5–9: resolve, mas alguém fica marcado • 10–14: resolve • 15–19: resolve e eleva o clima • 20: a praça te segue por 1 minuto.
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="details">
+            <h3>Abordagem 6 — Limite (sangue-frio, coragem, nojo) — Beco das Sombras</h3>
+            <p class="readaloud">
+              Entre duas casas, a música chega errada.
+              Abafada.
+              Como se estivesse passando por pano molhado.<br><br>
+
+              O beco respira frio.
+              Não é vento — é falta de sol.<br><br>
+
+              O problema aqui não é misterioso.
+              É humano demais:<br>
+              um saco de lixo rasgado,
+              restos espalhados,
+              um rato que não foge de imediato,
+              vômito fresco perto da parede.<br><br>
+
+              Um dono de casa gesticula, vermelho,
+              ameaçando chamar guarda “pra dar exemplo”.
+              Duas pessoas observam de longe,
+              já prontas pra transformar isso em história.<br><br>
+
+              Se vira escândalo, vira correria.
+              Se vira correria, a festa perde o controle.<br><br>
+
+              Calíria para antes da sujeira.
+              Não faz careta.
+              Não desvia o olhar.<br><br>
+
+              Ela olha para você —
+              não pelo que você diz,
+              mas pelo fato de você ainda estar olhando.<br><br>
+
+              Tem gente que resolve problema bonito.
+              Tem gente que resolve problema necessário.<br><br>
+
+              Ela fala baixo, direta, sem rodeio:<br/><br>
+
+              <em>“Eu preciso de alguém que resolva o que ninguém quer ver.”</em><br>
+              Uma pausa curta.<br><br>
+
+              <em>“Sem drama.”</em><br><br>
+
+              O rato se move.
+              O dono da casa aumenta o tom.
+              Um passo em falso e isso vira espetáculo.<br><br>
+
+              Calíria completa, agora só com o essencial:<br/><br>
+
+              <em>“Você me ajuda?”</em><br><br>
+
+              Ela não empurra você para frente.
+              Ela apenas fica ali,
+              segurando o resto do mundo no lugar,
+              como quem confia que você aguenta entrar onde precisa.<br><br>
+
+              Se você dá um passo,
+              Calíria já se vira para conter curiosos,
+              assumindo que a parte feia está resolvida.<br><br>
+            </p>
+
+            <div class="note">
+              <strong>Pergunta direta:</strong> qual foi a coisa mais desagradável que você já fez pra manter alguém seguro?<br/>
+              <strong>Micro-tarefa:</strong> limpar / negociar / intimidar sem violência / tirar civis dali.<br/>
+              <strong>Se quiser rolar:</strong> <strong>Intimidação</strong>, <strong>Sobrevivência</strong> ou <strong>Medicina</strong> (D20, D12/D13).
+            </div>
+
+            <div class="note">
+              <strong>Espectro (D20):</strong><br/>
+              1–4: escândalo • 5–9: resolve, mas vira boato • 10–14: resolve • 15–19: resolve e ninguém comenta • 20: some como se nunca tivesse existido.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Mestre — costura (como o grupo forma “sem misticismo”):</strong><br/>
+          A cada abordagem, Calíria sai andando já “puxando” a pessoa com um motivo prático (“vem comigo”, “segura isso”, “me ajuda ali”).
+          Quando ela aborda a próxima, a anterior está atrás dela. No fim, vocês chegam na <strong>Cena 0</strong> já como grupo funcional.
+        </div>
+
+        <hr class="sep"/>
+
+        <!-- =======================
+           CONVERGÊNCIA + CALÍRIA
+      ======================== -->
+        <h2 class="section-title">Convergência — A Praça Puxa Vocês (e a Calíria confirma)</h2>
+        <div class="readaloud">
+          <span class="dropcap">A</span>
+          cidade faz aquilo que cidades fazem quando evento grande está no limite: ela empurra pessoas pro mesmo ponto.
+          A fonte vira centro de gravidade. Um empurrão aqui, um pedido de desculpas ali,
+          uma criança correndo, uma moeda rolando… e vocês se veem de verdade.
+          <br><br>
+          Irmã Calíria chega alguns passos atrás, ofegante, como quem tentou manter o mundo inteiro funcionando.
+          Ela olha para vocês — <em>agora como equipe improvisada</em> — e o alívio dela é visível.
+          <br><br>
+          “Tá. Agora escutem”, ela diz baixo.
+          “Eu preciso de vocês pra uma coisa simples. E preciso agora — antes que a praça vire bagunça.”
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Mestre — chamada direta (um por vez):</strong><br/>
+          “Qual detalhe de outro personagem te chama atenção?”<br/>
+          “Você sente impulso de confiar ou desconfiar de quem?”<br/>
+          “Você fala seu nome ou guarda?”
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Anti-travamento (antes do incidente):</strong><br/>
+          Se o grupo travar em social, faça Calíria escolher uma pessoa e dizer:
+          <em>“Você. Me diz: você é do tipo que corre… ou do tipo que fica?”</em>
+        </div>
+
+        <hr class="sep"/>
+
+        <!-- =======================
+           INCIDENTE (REESCRITO)
+      ======================== -->
+        <h2 class="section-title">O Incidente — A Explosão de Gosma Violeta</h2>
+        <div class="readaloud">
+          <span class="dropcap">O</span>
+          festival não muda de tom — ele <em>desaba</em>.
+          <br><br>
+          Primeiro, um homem tropeça perto da fonte. Um rosto comum, um corpo comum, alguém que vocês esqueceriam.
+          Ele segura o próprio pescoço como se estivesse tentando impedir algo de sair.
+          A boca abre — mas não vem voz: vem um som de líquido fervendo em metal.
+          <br><br>
+          A pele escurece de dentro para fora. Veias brilham violeta sob a epiderme.
+          Lágrimas roxas escorrem devagar demais, como se o tempo tivesse ficado grosso.
+          Ele estende a mão — talvez pra vocês, talvez pra ninguém —
+          e naquele gesto existe um pedido: <em>“não me deixe sozinho no fim.”</em>
+          <br><br>
+          Irmã Calíria dá um passo à frente, instintiva.
+          “Ei—” ela começa, como se ainda fosse possível tratar isso como gente.
+          <br><br>
+          Então algo do lado de dentro se move.
+          <br><br>
+          O peito dele estufa como bolsa enchida rápido demais.
+          Um único som toma a praça: um sino dourado distante.
+          Não o sino da torre — um sino que parece vir do lugar onde as palavras nascem.
+          <br><br>
+          A explosão vem sem fogo.
+          Um <strong>estouro úmido</strong>.
+          Uma onda de <strong>gosma violeta</strong> arrebenta para todos os lados,
+          quente e pegajosa, salpicando bandeirolas, pratos, rostos, roupas, olhos.
+          O cheiro é doce e podre. Como fruta e funeral.
+          <br><br>
+          Barracas tombam. Lanternas caem. Madeira estala.
+          E no centro… sobra um caroço negro pulsando, como um coração sem dono.
+          <br><br>
+          Acima de vocês, o ar <em>rasga</em>.
+          Um rasgo gótico: alto, estreito, como contorno de catedral em negativo.
+          O frio de lá não tem origem.
+          E vocês têm a certeza impossível: <em>algo está olhando</em>… e não está com pressa.
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Na tela (ações imediatas):</strong><br/>
+          • Ajudar civis: <strong>Persuasão</strong> ou <strong>Intimidação</strong> (D20, D13)<br/>
+          • Resistir ao choque: <strong>Sabedoria</strong> (D12) (opcional)<br/>
+          • Ler o rasgo: <strong>Arcanismo</strong> (D20, D14)<br/>
+          • Caos da praça: role <strong>d6</strong> se quiser complicar
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Choque (Sabedoria D12 — espectro):</strong><br/>
+          1–3: congela (perde segundos) • 4–6: treme e fala falha • 7–9: reage • 10–11: clareza • 12: você vê um detalhe impossível no rasgo (pista).
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Anti-travamento (pós-incidente):</strong><br/>
+          Se o grupo ficar discutindo, faça Calíria gritar uma ordem curta:
+          <em>“VOCÊS! COMIGO! OU ESSA PRAÇA VIRA TÚMULO!”</em><br/>
+          Aí você aponta pra 2 problemas imediatos: <strong>fogo</strong> + <strong>civis presos</strong>.
+        </div>
+
+        <div class="top-actions" style="margin-top:14px">
+          <button class="btn alt" onclick="goTo('fase2.html')">Continuar → Fase 2 (Escolha de Caminhos)</button>
+        </div>
+      </div>
+
+      <!-- =======================
+           COLUNA DO MESTRE
+      ======================== -->
+      <div class="card">
+        <h2 class="section-title">Painel do Mestre — Ritmo, Empurrões e Ecossistema</h2>
+
+        <div class="details">
+          <h3>Regra do Ritmo (anti-travamento real)</h3>
+          <ul>
+            <li>Se o grupo ficar em silêncio/teoria: role <span class="kbd">d6</span> “Reação do Mundo”.</li>
+            <li>Depois faça 1 pergunta direta pra 1 jogador: <em>“O que você faz agora?”</em></li>
+            <li>Nunca resolva com “nada acontece”. Sempre acontece <strong>algo pequeno</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="details" style="margin-top:12px">
+          <h3>Reação do Mundo (d6) — use quando travarem</h3>
+          <ul>
+            <li><strong>1</strong> — Um sino toca uma vez (errado). Alguém leva a mão ao peito.</li>
+            <li><strong>2</strong> — Um cheiro de ferro invade (por 2 segundos). Crianças param de rir.</li>
+            <li><strong>3</strong> — Um animal foge (cão, pombo). Como se tivesse visto algo.</li>
+            <li><strong>4</strong> — Um adulto diz um nome errado e fica confuso, envergonhado.</li>
+            <li><strong>5</strong> — Uma sombra se move contra a luz por 1 segundo.</li>
+            <li><strong>6</strong> — A multidão abre caminho como se “algo estivesse chegando”.</li>
+          </ul>
+        </div>
+
+        <div class="details" style="margin-top:12px">
+          <h3>Empurrões pra fala (use como gatilho)</h3>
+          <ul>
+            <li>“O que você evita olhar?”</li>
+            <li>“Quem você protege primeiro?”</li>
+            <li>“Qual detalhe te dá nojo aqui?”</li>
+            <li>“Você diz seu nome… ou guarda?”</li>
+          </ul>
+        </div>
+
+        <div class="details" style="margin-top:12px">
+          <h3>Futuro (sementes do enigma)</h3>
+          <ul>
+            <li>Faça o termo <strong>NOME</strong> aparecer como palavra repetida em: marcas, sussurros, reflexos.</li>
+            <li>O “violeta” do carimbo e o “violeta” da gosma têm o mesmo “sabor”.</li>
+            <li>O sino de Calíria vibra quando alguém mente — isso volta depois.</li>
+          </ul>
+        </div>
+
+        <div class="footer">
+          Fase 1 reescrita: encontro real + NPC âncora + pista de enigma + travas quebradas pelo mundo.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

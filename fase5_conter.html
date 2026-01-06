@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A Pustulância de Hadar — Fase 5A (Destruir)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <h1>Fase 5A — Destruir o Coração</h1>
+        <div class="subtitle">Clímax físico • a masmorra sangra noite • e o ouro racha</div>
+        <div class="pill">Cenas: <span class="kbd">showOnly()</span> • Pistas: <span class="kbd">5 letras</span> • Testes: <span class="kbd">D20</span> • Choque: <span class="kbd">D12</span></div>
+      </div>
+      <div class="top-actions">
+        <button class="btn small" onclick="goTo('fase5.html')">← Voltar ao HUB</button>
+        <button class="btn small" onclick="doTreasure('treasureBox5a')">🎲 Sorteio de Tesouro</button>
+        <button class="btn small alt" onclick="goTo('fase5_enigma.html')">Ir para o Enigma →</button>
+      </div>
+    </div>
+
+    <div id="treasureBox5a" class="grid"></div>
+
+    <div class="grid two">
+      <div class="card">
+
+        <div id="hub" data-scene>
+          <h2 class="section-title">Ato — “Então quebre.”</h2>
+          <div class="readaloud">
+            <span class="dropcap">V</span>
+            ocês escolhem a violência como resposta.
+            E o coração, por um instante, parece… <em>aliviado</em>.
+            Como se estivesse esperando ser atacado para ter permissão de reagir.
+            <br><br>
+            Os fios negros que o sustentam vibram como cordas de instrumento.
+            A cada vibração, vocês ouvem algo parecido com sílabas presas,
+            como palavras tentando nascer e falhando.
+            <br><br>
+            O ouro na superfície racha em linhas finas. E sob o ouro, o roxo é tão fundo
+            que parece um lugar — um céu sem ar, uma boca que não aprendeu a fechar.
+            <br><br>
+            A voz sem boca não grita. Ela sussurra dentro de vocês, quase curiosa:
+            <em>“VOCÊS QUEREM UM MUNDO? QUEBRAR É UM JEITO DE CHAMAR.”</em>
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Empurrões (antes do primeiro golpe):</strong><br/>
+            <em>Quem ataca primeiro — e quem impede?</em><br/>
+            <em>Qual arma faz mais “sentido” contra isso: aço, fogo, fé, ou palavra?</em><br/>
+            <em>O que vocês temem liberar se quebrar?</em>
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Anti-travamento:</strong><br/>
+            Se ninguém agir, o coração pulsa forte e “empurra” o grupo com vento roxo.<br/>
+            Escolha 1 jogador e pergunte: <em>“Você bate, você protege, ou você observa?”</em>
+          </div>
+
+          <hr class="sep"/>
+
+          <h2 class="section-title">Pista 1 (anote!)</h2>
+          <div class="note">
+            Um filete de ouro cai e desenha no chão uma letra impossível — como escrita por estrela ferida:
+            <br/><br/>
+            <strong>LETRA 1: N</strong>
+            <br/><br/>
+            <span class="muted">Parábola do vitral:</span> “O que não tem nome pode ser engolido sem barulho.”
+          </div>
+          <div class="top-actions">
+            <button class="btn small" onclick="markP5Clue('N')">Registrar pista “N”</button>
+            <button class="btn alt" onclick="showOnly('cena2')">Continuar →</button>
+          </div>
+        </div>
+
+        <div id="cena2" data-scene style="display:none">
+          <h2 class="section-title">Cena 2 — Romper Tendões</h2>
+          <div class="readaloud">
+            <span class="dropcap">O</span>
+            coração não recua. Ele pulsa mais forte,
+            e o pulso tenta empurrar vocês de volta como ondas que vêm de dentro do peito.
+            Os tendões negros chicoteiam quando feridos, e cada chicote parece uma pergunta:
+            <em>“você tem certeza?”</em>
+            <br><br>
+            O espaço ao redor do coração é ruim para lutar:
+            o chão é liso como língua,
+            a luz é traiçoeira,
+            e o ar pune respiração errada.
+            Uma gota roxa cai, e onde ela toca, a pedra parece esquecer que é pedra.
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Terreno (use pra forçar decisão):</strong><br/>
+            • Se correr: <strong>DES (D20, D12)</strong> (escorrega / reposiciona).<br/>
+            • Se agarrar tendão: <strong>FOR (D20, D14)</strong> (puxa / rompe).<br/>
+            • Se mirar no núcleo: <strong>ARC (D20, D15)</strong> (evita liberar “noite”).<br/>
+            <span class="muted">Pergunte: “Quem faz o quê?” — sem discussão longa.</span>
+          </div>
+
+          <div class="details">
+            <h3>Desafio (3 sucessos antes de 2 falhas)</h3>
+            <ul>
+              <li><strong>Força (Atletismo) (D20, D14):</strong> quebrar amarras / abrir espaço para atacar.</li>
+              <li><strong>Arcanismo (D20, D15):</strong> atingir o núcleo sem liberar explosão de fenda.</li>
+              <li><strong>Religião (D20, D14):</strong> manter mente inteira contra pulsos.</li>
+              <li><strong>Acrobacia (D20, D13):</strong> desviar de chicote de tendão (posição).</li>
+            </ul>
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Espectro (D20):</strong>
+            1–4 azar profundo (o coração aprende um padrão; consequência narrativa) •
+            5–9 falha com consequência •
+            10–14 sucesso instável (ganha, mas paga custo) •
+            15–19 sólido •
+            20 sorte inquietante (pista extra ou foco).
+          </div>
+
+          <hr class="sep"/>
+
+          <h2 class="section-title">Pista 2 (anote!)</h2>
+          <div class="note">
+            Um tendão estoura e, no som do estouro, vocês ouvem a mesma letra repetida por vozes diferentes:
+            <br/><br/>
+            <strong>LETRA 2: O</strong>
+            <br/><br/>
+            <span class="muted">Parábola:</span> “O ouro é só capa. O nome é o que segura a coisa no mundo.”
+          </div>
+
+          <div class="top-actions">
+            <button class="btn small" onclick="markP5Clue('O')">Registrar pista “O”</button>
+            <button class="btn alt" onclick="showOnly('cena3')">Continuar →</button>
+          </div>
+        </div>
+
+        <div id="cena3" data-scene style="display:none">
+          <h2 class="section-title">Cena 3 — O Núcleo Vaza Noite</h2>
+          <div class="readaloud">
+            <span class="dropcap">Q</span>
+            uando vocês ferem mais fundo, o coração não sangra.
+            Ele <em>vaza noite</em>.
+            A noite cai no chão como líquido,
+            e onde toca, a pedra esquece que é pedra —
+            vira matéria indecisa, como carne tentando ser chão.
+            <br><br>
+            O roxo dentro do coração se abre como um olho,
+            e por um segundo vocês enxergam algo além:
+            um céu grande demais,
+            uma estrela que parece estar com fome,
+            e um frio que não tem origem.
+            <br><br>
+            A voz sem boca sussurra:
+            <em>“EU NÃO ESTOU AQUI. EU ESTOU DO OUTRO LADO. VOCÊS SÓ VEEM A COSTURA.”</em>
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Empurrões:</strong><br/>
+            <em>Quem viu o “além” por mais tempo?</em> / <em>Quem finge que não viu?</em>
+          </div>
+
+          <div class="details">
+            <h3>Choque do Além (opcional)</h3>
+            <p>Quem encarou o núcleo pode rolar <strong>Sabedoria (D12)</strong>:</p>
+            <ul>
+              <li>1–3: medo morde (amedrontado narrativo 1 turno)</li>
+              <li>4–6: tremor</li>
+              <li>7–9: controla</li>
+              <li>10–11: firme</li>
+              <li>12: você ganha 1 pista bônus do Mestre (meia-boca: “não foi curado, foi interrompido”)</li>
+            </ul>
+          </div>
+
+          <hr class="sep"/>
+
+          <h2 class="section-title">Pista 3 (anote!)</h2>
+          <div class="note">
+            No reflexo do ouro rachado, o “céu” do vitral escreve em silêncio:
+            <br/><br/>
+            <strong>LETRA 3: M</strong>
+            <br/><br/>
+            <span class="muted">Parábola:</span> “Memória e nome são irmãos. Se um cai, o outro manca.”
+          </div>
+
+          <div class="top-actions">
+            <button class="btn small" onclick="markP5Clue('M')">Registrar pista “M”</button>
+            <button class="btn alt" onclick="showOnly('cena4')">Continuar →</button>
+          </div>
+        </div>
+
+        <div id="cena4" data-scene style="display:none">
+          <h2 class="section-title">Cena 4 — O Coração Aprende Vocês</h2>
+          <div class="readaloud">
+            <span class="dropcap">A</span>
+            cada golpe, o coração responde melhor.
+            Ele ajusta o pulso ao ritmo de vocês.
+            Ele aprende a hora exata em que cada um respira,
+            o instante em que alguém hesita,
+            o jeito que uma mão treme antes de uma magia.
+            <br><br>
+            Isso é o terror real: não o dano — a <em>adaptação</em>.
+            O lugar vira espelho,
+            mas um espelho que quer engolir o rosto refletido.
+            <br><br>
+            A voz sussurra:
+            <em>“VOCÊS ME ENSINAM. EU ENSINO DE VOLTA.”</em>
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Anti-travamento aqui:</strong><br/>
+            Se a cena virar “bater até acabar”, troque o objetivo:
+            o coração tenta “puxar” uma arma/objeto para dentro do roxo (narração).
+            Pergunte: <em>“Você solta e continua ou salva e recua?”</em>
+          </div>
+
+          <hr class="sep"/>
+
+          <h2 class="section-title">Pista 4 (anote!)</h2>
+          <div class="note">
+            O chão, agora manchado de roxo, forma por acaso uma letra.
+            Mas vocês sabem que aqui “acaso” é só disfarce:
+            <br/><br/>
+            <strong>LETRA 4: E</strong>
+            <br/><br/>
+            <span class="muted">Parábola:</span> “Eu devoro o que não é dito. Eu devoro o que não é escrito. Eu devoro o que não é chamado.”
+          </div>
+
+          <div class="top-actions">
+            <button class="btn small" onclick="markP5Clue('E')">Registrar pista “E”</button>
+            <button class="btn alt" onclick="showOnly('cena5')">Continuar →</button>
+          </div>
+        </div>
+
+        <div id="cena5" data-scene style="display:none">
+          <h2 class="section-title">Cena 5 — Ruína e Fuga</h2>
+          <div class="readaloud">
+            <span class="dropcap">O</span>
+            coração começa a falhar. O pulso fica irregular.
+            O ouro se abre como casca e o roxo se espalha como fumaça que decide virar mar.
+            <br><br>
+            A câmara range. As costelas da arquitetura tremem.
+            A masmorra não desaba como prédio:
+            ela desaba como corpo entrando em convulsão.
+            <br><br>
+            E a voz na cabeça de vocês não grita.
+            Ela sussurra, quase gentil:
+            <em>“VOCÊS APRENDERAM A FERIR. MAS APRENDERAM A NOMEAR?”</em>
+          </div>
+
+          <div class="details">
+            <h3>Fuga (d6, opcional)</h3>
+            <p>Role <span class="kbd">d6</span>:</p>
+            <ul>
+              <li>1: corredor desaba (separa o grupo — 1 rodada de pânico narrativo)</li>
+              <li>2: fumaça violeta cega (DES D12: 1–3 tropeça e perde item pequeno)</li>
+              <li>3–4: fuga difícil (corte de cena com custo: relógio +1 em campanha)</li>
+              <li>5: dourado abre caminho (um aliado ganha foco)</li>
+              <li>6: vocês são cuspidos em outro trecho (ponte narrativa; “o mundo cospe vocês”) </li>
+            </ul>
+          </div>
+
+          <hr class="sep"/>
+
+          <h2 class="section-title">Pista 5 (anote!)</h2>
+          <div class="note">
+            No último pulso, o coração “fala” uma única letra, como oração:
+            <br/><br/>
+            <strong>LETRA 5: S</strong>
+            <br/><br/>
+            <span class="muted">Parábola:</span> “Seis bocas, seis nomes. Um mundo inteiro depende do que vocês chamam de verdade.”
+          </div>
+
+          <div class="top-actions">
+            <button class="btn small" onclick="markP5Clue('S')">Registrar pista “S”</button>
+            <button class="btn alt" onclick="goTo('fase5_enigma.html')">Ir ao Enigma Final →</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title">Painel do Mestre — Destruir</h2>
+        <div class="details">
+          <h3>Como alongar sem cansar</h3>
+          <ul>
+            <li>Depois de cada “sucesso”, faça o coração responder com um pulso (narração rápida).</li>
+            <li>Chame um jogador por vez: “Jogador X, o que você faz agora?”</li>
+            <li>Mostre o custo: o lugar aprende padrão (sem precisar punir com dano sempre).</li>
+          </ul>
+        </div>
+        <div class="details" style="margin-top:12px">
+          <h3>Anti-travamento pronto</h3>
+          <p class="readaloud">
+            O coração tenta dizer um nome… e erra por uma letra.
+            Como criança aprendendo a chamar aquilo que vai morder.
+          </p>
+          <p><strong>Pergunte:</strong> “Quem responde com ataque, quem responde com silêncio, e quem responde com palavra?”</p>
+        </div>
+        <div class="footer">Essa rota dá as 5 letras. Depois vá para <span class="kbd">fase5_enigma.html</span>.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function getP5(){
+      try { return (typeof getRunState==='function') ? (getRunState('p5clues', {})||{}) : (JSON.parse(localStorage.getItem('p5clues')||'{}')); }
+      catch(e){ return {}; }
+    }
+    function setP5(v){
+      try { if(typeof setRunState==='function') setRunState('p5clues', v); else localStorage.setItem('p5clues', JSON.stringify(v)); }
+      catch(e){}
+    }
+    function markP5Clue(letter){
+      const obj = getP5();
+      obj[letter] = true;
+      setP5(obj);
+      alert('Pista registrada: '+letter);
+    }
+  </script>
+</body>
+</html>

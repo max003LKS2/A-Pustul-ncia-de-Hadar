@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A Pustulância de Hadar — Fase 2B (Combate)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <h1>Fase 2B — Combate (Reforçado)</h1>
+        <div class="subtitle">Quando a fome ganha pernas • alguém precisa cortar</div>
+        <div class="pill">Encontro: <span class="kbd">D20</span> • Caos: <span class="kbd">d6</span> • Marca: <span class="kbd">d100</span></div>
+      </div>
+      <div class="top-actions">
+        <button class="btn small" onclick="goTo('fase2.html')">← Voltar aos caminhos</button>
+        <button class="btn small" onclick="doTreasure('treasureBox2b')">🎲 Sorteio de Tesouro</button>
+      </div>
+    </div>
+
+    <div id="treasureBox2b" class="grid"></div>
+
+    <div class="grid two">
+      <div class="card">
+        <div id="hub" data-scene>
+          <h2 class="section-title">A Fome Sai do Chão</h2>
+          <div class="readaloud">
+            <span class="dropcap">D</span>
+            a gosma violeta surgem formas pequenas demais para serem “monstros”
+            e horríveis demais para serem “animais”.
+            Elas não andam: <em>se puxam</em>.
+            <br><br>
+            A pele é úmida como olho recém-nascido.
+            As juntas são erradas — dobram onde não deveria haver dobra.
+            E existe uma coisa que denuncia inteligência sem linguagem:
+            elas <em>evitam</em> o que é firme… e correm para o que está fraco.
+            <br><br>
+            Quando uma delas encosta no dourado de uma fita, a cor desbota.
+            Quando encosta na pele de um civil, a pessoa grita como se tivesse lembrado do próprio funeral.
+            <br><br>
+            O rasgo gótico, ao fundo, parece inclinar a “atenção”.
+            Como se estivesse aprendendo a forma de vocês pela violência.
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Calíria (âncora humana):</strong><br/>
+            Ela segura um civil pelo braço e grita:
+            “NÃO CORRE SOZINHO!”
+            <br/>
+            O sino rachado vibra quando uma Cria encosta num nome dito em desespero.
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Mestre — spotlight em 6 (antes de iniciativa):</strong><br/>
+            <em>Jogador 1:</em> quem você protege primeiro?<br/>
+            <em>Jogador 2:</em> você corre pra cima ou procura cobertura?<br/>
+            <em>Jogador 3:</em> você grita ordens ou vira lâmina silenciosa?<br/>
+            <em>Jogador 4:</em> qual detalhe da criatura te dá nojo real?<br/>
+            <em>Jogador 5:</em> você percebe a cor dourada morrendo — o que isso te faz sentir?<br/>
+            <em>Jogador 6:</em> você sente observado pelo rasgo? como?
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Caos do combate (d6):</strong><br/>
+            <strong>1</strong> fogo cria terreno perigoso • <strong>2</strong> civil preso distrai • <strong>3–4</strong> normal •
+            <strong>5</strong> boa cobertura • <strong>6</strong> uma Cria escorrega e o grupo ganha vantagem narrativa no 1º turno.
+          </div>
+
+          <hr class="sep"/>
+
+          <h2 class="section-title">O que as Crias fazem (IA simples — anti-travamento de tática)</h2>
+          <div class="details">
+            <ul>
+              <li><strong>Instinto 1:</strong> elas vão no que está <em>sozinho</em>.</li>
+              <li><strong>Instinto 2:</strong> elas tentam <em>tocar</em> antes de matar (como se tocar fosse colher dados).</li>
+              <li><strong>Instinto 3:</strong> se alguém diz um nome em voz alta, uma Cria tenta ir naquela direção.</li>
+              <li><strong>Instinto 4:</strong> elas evitam luz dourada intensa (não por fraqueza — por <em>aversão</em>).</li>
+            </ul>
+          </div>
+
+          <hr class="sep"/>
+
+          <h2 class="section-title">Encontro</h2>
+          <div class="note">
+            <strong>Sugestão:</strong> 3–5 Crias para 6 jogadores.
+            Se quiser horror maior: 1 Cria “maior” (PV dobrado) aparece no turno 3.
+          </div>
+
+          <div class="statblock" style="margin-top:12px">
+            <div class="name">
+              <h3>Cria da Pustulância</h3>
+              <div class="meta">Pequena aberração • “fome com dedos” • ND 1/4–1/2 (ajuste livre)</div>
+            </div>
+            <div class="line"></div>
+
+            <div class="row">
+              <div class="kv">
+                <strong>CA</strong> 12 (pele viscosa)<br/>
+                <strong>PV</strong> 9 (2d6 + 2)<br/>
+                <strong>Desloc.</strong> 9m, escalada 6m
+              </div>
+              <div class="kv">
+                <strong>FOR</strong> 10 (+0) • <strong>DES</strong> 14 (+2) • <strong>CON</strong> 12 (+1)<br/>
+                <strong>INT</strong> 3 (-4) • <strong>SAB</strong> 10 (+0) • <strong>CAR</strong> 5 (-3)
+              </div>
+            </div>
+
+            <div class="row" style="margin-top:10px">
+              <div class="kv">
+                <strong>Sentidos</strong> visão no escuro 18m, Percepção passiva 10<br/>
+                <strong>Perícias</strong> Furtividade +4 (quando molhada/sombra)
+              </div>
+              <div class="kv">
+                <strong>Traço: Pele de Memória.</strong> Ao tocar alguém, “aprende” 1 hábito (tática, medo, padrão).<br/>
+                <strong>Anti-travamento:</strong> se o combate ficar parado, faça 1 Cria “aprender” e mudar de alvo com precisão assustadora.
+              </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="actions">
+              <h4>Ações</h4>
+              <p><strong>Garras.</strong> +4 para acertar, 1,5m. Dano <strong>1d6 + 2</strong> (cortante). Ao acertar, alvo rola <strong>Constituição (D12)</strong>:
+                1–3 náusea (desvantagem narrativa 1 turno) • 4–6 tremor • 7–12 resiste.</p>
+              <p><strong>Toque Coletor (Recarga 5–6).</strong> Se acertar, a Cria não causa dano extra, mas “marca” o alvo.
+                A marca volta mais tarde como pesadelo / nome dito errado / sombra atrasada (mestre escolhe).</p>
+              <p><strong>Salto Inquieto (Recarga 5–6).</strong> Salta 6m sem AOO; no fim, faz Garras.</p>
+            </div>
+          </div>
+
+          <div class="details" style="margin-top:12px">
+            <h3>Descrição física (para narrar cada ataque)</h3>
+            <ul>
+              <li>As garras não são unhas. São <strong>farpas translúcidas</strong>, como vidro úmido.</li>
+              <li>Quando sangram, não sai sangue: sai uma <strong>gelatina violeta</strong> que tenta voltar pro chão.</li>
+              <li>Quando morrem, fazem um som baixo: <em>como alguém dizendo uma palavra sem ar</em>.</li>
+            </ul>
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Marca (d100 — quando alguém cair a 0 PV ou levar 2 acertos seguidos):</strong><br/>
+            01–10 mancha violeta (1 dia) • 11–30 pesadelos • 31–60 nada imediato •
+            61–85 você vê a porta gótica no céu • 86–99 uma Cria sussurra “NOME” • 100 sua sombra atrasa 1 segundo.
+          </div>
+
+          <hr class="sep"/>
+
+          <h2 class="section-title">Fecho do Combate</h2>
+          <div class="readaloud">
+            <span class="dropcap">Q</span>
+            uando a última Cria cai, a gosma tenta “voltar” para dentro das rachaduras.
+            Como se a própria morte tivesse vergonha de ficar exposta.
+            <br><br>
+            Calíria segura o sino rachado com a mão, como se fosse uma coisa viva.
+            “Isso não era daqui”, ela diz.
+            E pela primeira vez… ela parece com medo de dizer a palavra errada.
+            <br><br>
+            Perto da fonte, o rasgo gótico pulsa.
+            Não como portal.
+            Como ferida tentando aprender a falar.
+          </div>
+
+          <div class="note" style="margin-top:12px">
+            <strong>Marca de caminho:</strong> <span class="tag">Hadar Observou o Combate</span> (o lugar adapta depois).
+          </div>
+
+          <div class="top-actions" style="margin-top:14px">
+            <button class="btn danger" onclick="completePath('combate',{hadarViuLutar:true}); goTo('fase3.html')">
+              Concluir Combate → Ir para Fase 3
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title">Painel do Mestre — Combate</h2>
+        <div class="details">
+          <h3>Anti-travamento de cena</h3>
+          <ul>
+            <li>Se travar: um civil grita um nome e uma Cria muda de alvo na hora.</li>
+            <li>Se travar: o fogo muda direção e cria terreno (força reposicionamento).</li>
+            <li>Se travar: o rasgo “responde” com um frio que apaga uma lanterna.</li>
+          </ul>
+        </div>
+        <div class="footer">Depois, tudo converge na Fase 3.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

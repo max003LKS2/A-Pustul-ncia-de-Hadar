@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A Pustulância de Hadar — Fase 3 (Hub)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <h1>Fase 3 — O Corredor que Não Existe (HUB)</h1>
+        <div class="subtitle">Vocês atravessam a fenda — e o lugar tenta aprender o formato do que vocês são</div>
+        <div class="pill">
+          Evento: <span class="kbd">d6</span> • Presságio: <span class="kbd">d100</span> • Choque: <span class="kbd">D12</span> • Testes: <span class="kbd">D20</span>
+        </div>
+      </div>
+
+      <div class="top-actions">
+        <button class="btn small" onclick="goTo('fase2.html')">← Voltar Fase 2</button>
+
+        <button class="btn small alt" onclick="
+          const p = (typeof getRunState==='function') ? getRunState('path', null) : null;
+          if(p) goTo('fase2_'+p+'.html'); else goTo('fase2.html');
+        ">↩ Voltar ao Caminho</button>
+
+        <button class="btn small" onclick="doTreasure('treasureBox3')">🎲 Sorteio de Tesouro</button>
+        <button class="btn small alt" onclick="goTo('fase4.html')">Ir para Fase 4 →</button>
+      </div>
+    </div>
+
+    <div id="treasureBox3" class="grid"></div>
+
+    <div class="grid two">
+      <div class="card">
+        <h2 class="section-title">A Travessia — O Outro Lado do Rasgo</h2>
+
+        <div class="readaloud">
+          <span class="dropcap">Q</span>
+          uando vocês atravessam, o festival não fica “para trás”.
+          Ele vira uma lembrança com algodão: som abafado, cor lavada, cheiro distante.
+          A última risada não termina — ela é cortada como fio, como se alguém tivesse fechado uma porta em cima da alegria.
+          <br><br>
+          Do lado de cá, a primeira coisa que vocês sentem não é medo.
+          É <em>descompasso</em>.
+          Como se o corpo tivesse chegado um segundo antes da alma.
+          <br><br>
+          O ar daqui não entra no peito como ar. Ele <em>arranha</em>.
+          Tem gosto de metal gasto, moeda antiga na língua, e por cima disso… um doce estragado,
+          como fruta esquecida dentro de um templo fechado.
+          Quando vocês respiram fundo, o lugar devolve um frio que parece ter passado por ossos antes de chegar em vocês.
+          <br><br>
+          As paredes parecem pedra até vocês perceberem o erro:
+          elas têm a temperatura de pele que acabou de acordar.
+          Se alguém encosta, sente primeiro morno — e depois um frio que sobe pelo braço como arrependimento.
+          Elas não respiram como pulmões.
+          Respirar aqui é um hábito do lugar — uma tentativa de parecer mundo.
+          <br><br>
+          A luz não “ilumina”. Ela <em>pinga</em>.
+          Violeta em filetes finos, como saliva presa no teto, marcando o chão em manchas que não refletem vocês —
+          refletem o que vocês <em>poderiam</em> ser se o medo tivesse tempo.
+          <br><br>
+          À frente, um corredor de arcos góticos altos como costelas.
+          Nervuras sobem pelo teto como tendões.
+          Vitrais sem santos: constelações e palavras quebradas, como se o céu tivesse sido escrito e rasurado —
+          e ninguém lembra quem teve o direito de apagar.
+          <br><br>
+          E então vem a certeza incômoda:
+          o corredor não está só “ali”.
+          Ele está <em>atento</em>.
+          Como uma ferida sabe quando alguém encosta.
+          Como uma boca sabe quando alguém fala.
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Eco de Calíria (não é presença, é âncora):</strong><br/>
+          Por 1 segundo, vocês juram ouvir a voz dela — não como lembrança, mas como gravação:
+          <em>“Não deixa ninguém sozinho.”</em><br/>
+          A frase some. O lugar parece ter gostado de aprender o tom dela.
+          <br/><br/>
+          <span class="muted">Se alguém repetir essa frase em voz alta, descreva o ar “endurecendo” como se o corredor estivesse anotando.</span>
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>O ecossistema do Corredor (como ele caça):</strong><br/>
+          • Ele <strong>imita</strong> (voz, hábito, frase), mas erra por um fio — o suficiente para dar nojo.<br/>
+          • Ele <strong>testa</strong> (separa, apaga luz, embaralha referência, provoca com “atalhos”).<br/>
+          • Ele <strong>aprende</strong> (toda hesitação vira padrão; toda falha vira “atalho” para ele).<br/>
+          • Ele não quer “matar”. Ele quer <strong>conter</strong> vocês aqui dentro, até vocês deixarem algo para trás: um nome, uma promessa, um pedaço de coragem.
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Relógio de Contaminação (manual):</strong>
+          marque 1 segmento quando: (a) alguém cai a 0 PV, (b) alguém tira <strong>1</strong> em teste importante,
+          (c) o grupo recua sem resolver uma sala, (d) alguém aceita “atalho” oferecido pela masmorra,
+          <strong>(e) alguém diz seu nome verdadeiro em voz alta aqui dentro</strong>.
+          Ao preencher 4/4, o lugar “aprende” uma verdade sobre o grupo (efeito narrativo + dificuldade).
+          <br/><br/>
+          <span class="tag">[0/4]</span><span class="tag">[1/4]</span><span class="tag">[2/4]</span><span class="tag">[3/4]</span><span class="tag">[4/4]</span>
+        </div>
+
+        <div id="recapFromPath" class="note" style="margin-top:12px">
+          <strong>De onde vocês vieram:</strong> (carregando…)
+        </div>
+
+        <hr class="sep"/>
+
+        <h2 class="section-title">Empurrões de Fala (spotlight — obrigatório)</h2>
+
+        <div class="details">
+          <h3>Câmera 1 — Chegada (um por vez)</h3>
+          <ul>
+            <li><strong>Jogador 1:</strong> o que você faz com as mãos quando percebe que a parede tem “temperatura de pele”?</li>
+            <li><strong>Jogador 2:</strong> qual som você procura… e não encontra?</li>
+            <li><strong>Jogador 3:</strong> você tenta dar um nome a esse lugar ou evita nomear?</li>
+            <li><strong>Jogador 4:</strong> qual detalhe do corredor te irrita mais do que deveria?</li>
+            <li><strong>Jogador 5:</strong> o vitral te mostra o quê quando você olha pra cima?</li>
+            <li><strong>Jogador 6:</strong> sua sombra está normal… ou está um passo adiantada?</li>
+          </ul>
+        </div>
+
+        <div class="details" style="margin-top:12px">
+          <h3>Câmera 2 — O Festival vira Isca</h3>
+          <ul>
+            <li><strong>Jogador 1:</strong> que cheiro do festival você tenta lembrar pra se manter “você”?</li>
+            <li><strong>Jogador 2:</strong> que rosto do festival você teme nunca mais ver?</li>
+            <li><strong>Jogador 3:</strong> o que você acha que a cidade perdeu quando a fenda abriu?</li>
+            <li><strong>Jogador 4:</strong> que promessa você fez no momento do estouro?</li>
+            <li><strong>Jogador 5:</strong> que oração/hábito você repete quando o medo vem?</li>
+            <li><strong>Jogador 6:</strong> em quem você confia mais agora — e por quê?</li>
+          </ul>
+        </div>
+
+        <div class="details" style="margin-top:12px">
+          <h3>Câmera 3 — Regras do grupo (faz eles conversarem de verdade)</h3>
+          <ul>
+            <li><strong>Jogador 1:</strong> qual regra você impõe agora? (ex.: “ninguém sozinho”, “ninguém fala nome”, “corda sempre presa”)</li>
+            <li><strong>Jogador 2:</strong> qual regra você se recusa a seguir — e por quê?</li>
+            <li><strong>Jogador 3:</strong> quem você checa primeiro (aliado específico) e como?</li>
+            <li><strong>Jogador 4:</strong> qual coisa pequena você faria para acalmar alguém aqui?</li>
+            <li><strong>Jogador 5:</strong> o que você está disposto a perder hoje para o resto sobreviver?</li>
+            <li><strong>Jogador 6:</strong> qual medo você não vai admitir em voz alta?</li>
+          </ul>
+        </div>
+
+        <hr class="sep"/>
+
+        <h2 class="section-title">Anti-travamento do HUB</h2>
+        <div class="note">
+          Se o grupo travar aqui, não “espera” — o lugar reage.<br/>
+          Role <span class="kbd">d6</span> (Clima) ou <span class="kbd">d6</span> (Evento) e pergunte:
+          <em>“Quem reage primeiro?”</em><br/>
+          <span class="muted">Depois ofereça 3 opções curtas: <strong>entrar</strong> • <strong>marcar</strong> • <strong>cortar</strong>.</span>
+        </div>
+
+        <div class="details" style="margin-top:12px">
+          <h3>Clima do Corredor (d6)</h3>
+          <p><button class="btn small" onclick="rollClimaCorredor()">🎲 Rolar Clima</button></p>
+          <div id="ambText" class="note">Use quando o grupo parar demais, discutir demais ou ficar “seguro” demais.</div>
+        </div>
+
+        <div class="details" style="margin-top:12px">
+          <h3>Evento Sombrio (d6)</h3>
+          <p><button class="btn small" onclick="rollEventoSombrio()">🎲 Sortear Evento</button></p>
+          <div id="evtText" class="note">O lugar não pune: ele marca. E marca volta depois.</div>
+        </div>
+
+        <hr class="sep"/>
+
+        <h2 class="section-title">Checagem de Entrada (teste coletivo)</h2>
+        <div class="details">
+          <h3>Escolha um foco e role (metade do grupo precisa “passar”)</h3>
+          <ul>
+            <li><strong>Percepção (D20, D13):</strong> notar onde o corredor mente e evitar trecho falso.</li>
+            <li><strong>Investigação (D20, D13):</strong> identificar padrões repetidos e escolher rota real.</li>
+            <li><strong>Religião (D20, D14):</strong> rito curto para atravessar sem eco (juramento/oração/gesto).</li>
+          </ul>
+          <small class="muted">
+            Falha: desvantagem narrativa no primeiro teste da próxima sala (o lugar “prende o fôlego”)
+            e alguém perde uma palavra simples por 1 sala (mestre escolhe: “sol”, “voltar”, “amanhã”, “nome”).
+          </small>
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Espectro (D20):</strong><br/>
+          • <strong>1–4</strong>: azar profundo — alguém sente o próprio nome “escapar” (relógio +1).<br/>
+          • <strong>5–9</strong>: falha com consequência — referências se embaralham (direita/esquerda).<br/>
+          • <strong>10–14</strong>: sucesso instável — caminho certo, mas um sussurro testa um nome.<br/>
+          • <strong>15–19</strong>: sucesso sólido — controle com desconforto.<br/>
+          • <strong>20</strong>: sorte inquietante — um vitral pisca um mapa por 1 segundo.
+        </div>
+
+        <hr class="sep"/>
+
+        <h2 class="section-title">Rotas da Fase 3 (arquivos separados)</h2>
+        <div class="top-actions">
+          <button class="btn alt" onclick="goTo('fase3_vitral.html')">1) Sala do Vitral Partido</button>
+          <button class="btn" onclick="goTo('fase3_galeria.html')">2) Galeria dos Sussurros</button>
+          <button class="btn" onclick="goTo('fase3_chao.html')">3) Travessia do Chão Vivo</button>
+        </div>
+        <div class="top-actions" style="margin-top:10px">
+          <button class="btn" onclick="goTo('fase3_capela.html')">4) Capela do Nome Perdido</button>
+          <button class="btn danger" onclick="goTo('fase3_emboscada.html')">5) Emboscada</button>
+          <button class="btn danger" onclick="goTo('fase3_ponte.html')">Final) Ponte para a Fase 4</button>
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Rota curta recomendada:</strong> <span class="kbd">Vitral → Galeria → Chão Vivo → Ponte</span>.<br/>
+          <strong>Rota longa:</strong> faça tudo e encaixe a Emboscada quando quiser quebrar conversa com tensão física.<br/>
+          <span class="muted">Se o grupo estiver travando, use o Evento 5 (atalho) — mas cobre relógio +1.</span>
+        </div>
+
+        <div class="note" style="margin-top:12px">
+          <strong>Semente de enigma (só sensação, sem resposta):</strong><br/>
+          Às vezes, o dourado aparece como rachadura fina no canto do olho.<br/>
+          Quando aparece, a gosma parece <em>recuar</em>… como se doesse.<br/>
+          E quando alguém diz “nome”, o corredor fica um pouco mais quieto — quieto de atenção.
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title">Painel do Mestre — HUB</h2>
+
+        <div class="details">
+          <h3>Regra de ouro (anti-travamento global)</h3>
+          <ul>
+            <li>Se o grupo travar: role <span class="kbd">d6</span> (Clima/Evento) e peça 1 reação curta.</li>
+            <li>Nunca responda dúvida com “não sei”: responda com sensação, som, gesto do lugar.</li>
+            <li>O corredor não quer matar rápido. Ele quer <strong>aprender</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="details" style="margin-top:12px">
+          <h3>Três botões de condução (sempre ofereça 3 opções)</h3>
+          <ul>
+            <li><strong>Entrar:</strong> escolher uma sala agora (ação > conversa).</li>
+            <li><strong>Marcar:</strong> deixar sinal (corda, giz, pano) — o lugar pode copiar depois.</li>
+            <li><strong>Cortar:</strong> destruir algo do ambiente (vitral/caco/corda) — ganha controle, mas gera consequência.</li>
+          </ul>
+        </div>
+
+        <div class="details" style="margin-top:12px">
+          <h3>Como manter o mistério “meia boca” (bom)</h3>
+          <ul>
+            <li>Dê pistas contraditórias: “porta” e “ferida” ao mesmo tempo.</li>
+            <li>Faça o lugar copiar coisas humanas (voz, hábito, ritmo) e errar por pouco.</li>
+            <li>Quando alguém disser “nome”, descreva o ar ficando mais atento.</li>
+          </ul>
+        </div>
+
+        <div class="details" style="margin-top:12px">
+          <h3>Se eles tentarem “voltar”</h3>
+          <p class="readaloud">
+            Vocês olham para trás e o caminho parece o mesmo… mas não tem a mesma <em>distância</em>.
+            Como se a volta fosse um sonho com preguiça.
+            O festival está lá — mas abafado, desbotado, como se estivesse esperando ser lembrado do jeito certo.
+          </p>
+          <p class="muted"><strong>Efeito sugerido:</strong> podem voltar, mas relógio +1 e o festival volta com um detalhe errado.</p>
+        </div>
+
+        <div class="footer">Escolha uma sala e mantenha a câmera rodando.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <script>
+    (function(){
+      const el = document.getElementById("recapFromPath");
+      if(!el) return;
+
+      const path = (typeof getRunState === "function") ? getRunState("path", null) : null;
+      const flags = (typeof getRunState === "function") ? (getRunState("pathFlags", {}) || {}) : {};
+
+      const map = {
+        resgate: {
+          title: "Resgate",
+          text: "Vocês entraram com fuligem nas mãos e gente viva na conta. Aqui dentro, até compaixão pode virar cheiro — e o lugar parece gostar de cheiros humanos."
+        },
+        combate: {
+          title: "Combate",
+          text: "Vocês cortaram a fome quando ela ganhou pernas. O corredor aprende rápido: ele já reconhece o som do esforço e o ritmo da violência."
+        },
+        investigacao: {
+          title: "Investigação",
+          text: "Vocês viram o mapa por um instante, como vitral quebrado no ar. Sabem mais… e isso piora tudo, porque agora vocês entendem que algo está olhando de volta."
+        }
+      };
+
+      if(!path || !map[path]) {
+        el.innerHTML = "<strong>De onde vocês vieram:</strong> o festival ficou longe — e a distância aqui não é medida em passos.";
+        return;
+      }
+
+      let extra = "";
+      if(flags.civisSalvos) extra += "<br/><span class='tag'>Civis Salvos</span>";
+      if(flags.hadarViuLutar) extra += "<br/><span class='tag'>Hadar Observou o Combate</span>";
+      if(flags.viuMapa) extra += "<br/><span class='tag'>Vocês Viram o Mapa</span>";
+
+      el.innerHTML = `<strong>De onde vocês vieram:</strong> <span class="kbd">${map[path].title}</span><br/>${map[path].text}${extra}`;
+    })();
+
+    function rollClimaCorredor(){
+      const r = Math.floor(Math.random()*6)+1;
+      const el = document.getElementById('ambText');
+      if(!el) return;
+
+      const map = {
+        1:'O corredor “inverte” um detalhe: esquerda e direita ficam incertas por uma sala. As nervuras parecem apontar para lados diferentes. (Peça 1 jogador: “quem vai à frente e por quê?”)',
+        2:'O ar fica seco demais. Engolir dói como areia na garganta. (SAB D12 opcional: 1–3 voz falha; 4–12 segue.)',
+        3:'A luz púrpura pinga no chão. Onde cai, a pedra fica mole por 1 minuto — como língua encostando. Um passo errado vira abraço errado.',
+        4:'Sino distante. Não vem de torre: vem do espaço entre as nervuras do teto. Todo mundo sente no dente, como choque pequeno.',
+        5:'O cheiro de fruta podre sobe e depois some como se o lugar tivesse “inalado” a própria fome. Vocês ficam com a sensação de que ele guardou isso para depois.',
+        6:'Por 1 segundo vocês ouvem o festival. Não como lembrança — como gravação longe demais. Alguém jura ouvir o próprio nome sendo chamado.'
+      };
+
+      el.innerHTML = `<p><span class="tag">Resultado: ${r}</span></p><div class="readaloud">${map[r]}</div>`;
+    }
+
+    function rollEventoSombrio(){
+      const r = Math.floor(Math.random()*6)+1;
+      const t = document.getElementById('evtText');
+      if(!t) return;
+
+      const map = {
+        1: `Um sussurro diz um <strong>quase-nome</strong> de um personagem. Ele rola <strong>Sabedoria (D12)</strong>.
+            <br><br><strong>Espectro (D12):</strong>
+            1–3: abalado (próximo teste social com desvantagem narrativa).
+            4–6: tremor na voz.
+            7–9: segura.
+            10–11: finge normalidade.
+            12: ouve, bem baixo: “nós lembramos.”`,
+
+        2: `A luz púrpura apaga por 3 segundos. Todos rolam <strong>Destreza (D20, D12)</strong>.
+            <br><br><strong>Espectro (D20):</strong>
+            1–4: queda feia (1d6 opcional).
+            5–9: perde um item pequeno.
+            10–14: segura em algo (deixa marca na parede).
+            15–19: ajuda outro.
+            20: você fica em pé como se o mundo obedecesse — e isso é assustador.`,
+
+        3: `Um vitral “pisca”. Quem encarar rola <strong>Inteligência (D20, D13)</strong>.
+            <br><br><strong>Espectro (D20):</strong>
+            1–4: você se perde por instantes (relógio +1).
+            5–9: confuso até a próxima sala.
+            10–14: entende o padrão.
+            15–19: marca a referência correta.
+            20: vê um corredor que não estava ali — e sente saudade de um lugar que nunca existiu.`,
+
+        4: `Gosma violeta escorre do teto. Role <strong>Constituição (D12)</strong>.
+            <br><br><strong>Espectro (D12):</strong>
+            1–3: 1d6 necrótico (opcional) e mancha roxa.
+            4–6: coceira e enjoo.
+            7–9: mancha leve.
+            10–11: resiste.
+            12: a gosma recua como se reconhecesse algo dourado… por um segundo.`,
+
+        5: `O lugar oferece um atalho: uma porta que não fazia sombra faz sombra por 1 segundo.
+            <br><br><strong>Empurrão de fala:</strong> “Quem do grupo decide?” (eleja 1 líder momentâneo).
+            <br><br><strong>Efeito:</strong> se aceitarem, pule 1 sala, mas relógio +1.
+            <br/><span class="muted">O lugar aprende o tom da decisão.</span>`,
+
+        6: `O chão “respira”. Role <strong>d100</strong>.
+            <br><br><strong>Espectro (d100):</strong>
+            01–10: trinket útil, mas contaminado.
+            11–30: objeto do festival aparece aqui (impossível).
+            31–60: nada, só um sussurro (uma palavra repetida).
+            61–85: fragmento dourado de vitral (pista).
+            86–99: “NOME” arranha a garganta.
+            100: uma porta se desenha por 1 segundo e some — como se o lugar testasse “fuga”.`
+      };
+
+      t.innerHTML = `<p><span class="tag">Resultado: ${r}</span></p><div class="readaloud">${map[r]}</div>`;
+    }
+  </script>
+</body>
+</html>
